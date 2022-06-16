@@ -1,0 +1,74 @@
+<?xml version="1.0" encoding="utf-8"?>
+<androidx.cardview.widget.CardView
+    xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_margin="20dp"
+    app:cardCornerRadius="20dp"
+    app:cardElevation="10dp"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    android:layout_height="wrap_content">
+    <LinearLayout
+        android:orientation="horizontal"
+        android:padding="10dp"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content">
+
+        <LinearLayout
+            android:layout_width="wrap_content"
+            android:layout_height="match_parent">
+            <com.github.siyamed.shapeimageview.CircularImageView
+                android:layout_gravity="center"
+                android:layout_width="70dp"
+                android:layout_height="70dp"
+                android:src="@drawable/libro"
+                app:siBorderWidth="2dp"
+                app:siBorderColor="@color/teal_200"/>
+        </LinearLayout>
+        <LinearLayout
+
+            android:padding="5dp"
+            android:orientation="vertical"
+            android:layout_width="match_parent"
+            android:layout_height="match_parent">
+
+            <TextView
+                android:id="@+id/tvtitulo1"
+                android:text="titutlo"
+                android:textStyle="bold"
+                android:layout_marginBottom="10dp"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content">
+            </TextView>
+            <LinearLayout
+
+                android:orientation="horizontal"
+                android:layout_width="match_parent"
+                android:weightSum="2"
+                android:layout_height="wrap_content">
+                <Button
+                    android:id="@+id/btneditar"
+                    android:text="editar"
+                    android:layout_marginRight="2dp"
+                    android:layout_width="0dp"
+                    android:layout_weight="1"
+                    android:textSize="12sp"
+                    android:background="@drawable/borde_uno"
+                    android:layout_height="35dp">
+                </Button>
+                <Button
+                    android:id="@+id/btneliminar"
+                    android:text="eliminar"
+                    android:layout_marginLeft="2dp"
+                    android:layout_width="0dp"
+                    android:layout_weight="1"
+                    android:textSize="12sp"
+                    android:background="@drawable/borde_uno"
+                    android:layout_height="35dp">
+                </Button>
+
+            </LinearLayout>
+
+
+        </LinearLayout>
+    </LinearLayout>
+</androidx.cardview.widget.CardView>
