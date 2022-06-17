@@ -66,20 +66,9 @@ public class PresenterFecha  {
                     Fecha model=item.getValue(Fecha.class);
                     lista.add(model);
                 }
-                adapter= new AdapterFechas(lista, mContext, new InterfaceId() {
-                    @Override
-                    public void getId(String id) {
-                        Toast.makeText(mContext, id, Toast.LENGTH_SHORT).show();
-                        ViewFecha(id);
-                    }
-                });
+                adapter= new AdapterFechas(lista, mContext, id -> ViewFecha(id));
                 recyclerView.setAdapter(adapter);
-//                adapter.setOnClickListener(new View.OnClickListener() {
-//                    @Override
-//                    public void onClick(View v) {
-//
-//                    }
-//                });
+
             }
             @Override
             public void onCancelled(@NonNull @NotNull DatabaseError error) {
@@ -135,6 +124,7 @@ public class PresenterFecha  {
             }
         });
     }
+
     private  void  update(Lectura lectura){
 
         Map<String,Object> obj= new HashMap<>();

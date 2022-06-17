@@ -18,6 +18,7 @@ import com.example.arturitopsicologo.Interface.InterfaceId;
 import com.example.arturitopsicologo.Model.Fecha;
 import com.example.arturitopsicologo.Model.Lectura;
 import com.example.arturitopsicologo.R;
+import com.example.arturitopsicologo.View.HorasActivity;
 import com.example.arturitopsicologo.View.LecturaActivity;
 import com.google.firebase.database.DataSnapshot;
 import com.google.firebase.database.DatabaseError;
@@ -72,6 +73,13 @@ public class AdapterFechas extends RecyclerView.Adapter<AdapterFechas.ViewHolder
                     interfaceFecha.getId(datgolder.id);
                 }
             });
+            datgolder.btnhoras.setOnClickListener(view -> {
+                Intent intent = new Intent(context, HorasActivity.class);
+                Bundle bundle = new Bundle();
+                bundle.putString("fecha_id",datgolder.id);
+                intent.putExtras(bundle);
+                context.startActivity(intent);
+            });
         }
     }
 
@@ -83,13 +91,14 @@ public class AdapterFechas extends RecyclerView.Adapter<AdapterFechas.ViewHolder
     public class ViewHolderDatos extends RecyclerView.ViewHolder {
 
         TextView tvfecha;
-        Button btneditarfecha;
+        Button btneditarfecha,btnhoras;
         String id;
 
         public ViewHolderDatos(@NonNull View itemView) {
             super(itemView);
             tvfecha=(TextView) itemView.findViewById(R.id.tvfecha);
             btneditarfecha=(Button) itemView.findViewById(R.id.btneditarfecha);
+            btnhoras=(Button) itemView.findViewById(R.id.btnhoras);
         }
     }
 }

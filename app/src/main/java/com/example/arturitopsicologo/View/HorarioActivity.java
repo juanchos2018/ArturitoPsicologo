@@ -8,6 +8,7 @@ import android.app.DatePickerDialog;
 import android.content.Context;
 import android.os.Bundle;
 import android.text.TextUtils;
+import android.util.Log;
 import android.view.View;
 import android.widget.DatePicker;
 import android.widget.Toast;
@@ -63,6 +64,7 @@ public class HorarioActivity extends AppCompatActivity  implements View.OnClickL
         mAuth = FirebaseAuth.getInstance();
         user_id = mAuth.getCurrentUser().getUid();
         presenter= new PresenterFecha(this,reference,this,user_id);
+        Log.e("id_user",user_id);
         inputs();
     }
 
@@ -80,6 +82,7 @@ public class HorarioActivity extends AppCompatActivity  implements View.OnClickL
     }
 
     private void inputs() {
+
         btnaddFecha=(FloatingActionButton) findViewById(R.id.btnaddFecha);
 
         btnaddFecha.setOnClickListener(this);
