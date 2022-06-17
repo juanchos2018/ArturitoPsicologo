@@ -10,6 +10,9 @@
         android:supportsRtl="true"
         android:theme="@style/Theme.ArturitoPsicologo">
         <activity
+            android:name=".View.PacienteActivity"
+            android:exported="false" />
+        <activity
             android:name=".View.HorasActivity"
             android:exported="false" />
         <activity
@@ -32,7 +35,7 @@
             android:exported="false" />
         <activity
             android:name=".LoginActivity"
-            android:exported="true"></activity>
+            android:exported="true" />
         <activity
             android:name=".View.FiguraActivity"
             android:exported="false" />

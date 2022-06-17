@@ -54,6 +54,7 @@ public class PresenterHorario {
 
         CantidaItems();
         String key =databaseReference.push().getKey();
+       // String key =dbReference.push().getKey();
         horario.setId(key);
         horario.setIndex((int) index+1);
 

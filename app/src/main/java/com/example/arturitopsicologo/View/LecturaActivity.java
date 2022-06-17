@@ -22,12 +22,10 @@ import com.google.firebase.database.FirebaseDatabase;
 public class LecturaActivity extends AppCompatActivity implements View.OnClickListener {
 
 
-
-
     LinearLayout layoutlectura,layoutcuestionario;
     RadioButton search,offer;
     EditText etpregunta1,etpregunta2,etpregunta3,etLectura,ettitulo;
-    Button btnguardar;
+    Button btnguardar,btnpublicar;
 
     PresenterLectura presenter;
     private DatabaseReference reference;
@@ -91,6 +89,7 @@ public class LecturaActivity extends AppCompatActivity implements View.OnClickLi
         ettitulo =(EditText) findViewById(R.id.ettitulo);
 
         btnguardar=(Button) findViewById(R.id.btnguardar);
+        btnpublicar=(Button) findViewById(R.id.btnpublicar);
         btnguardar.setOnClickListener(this);
 
     }

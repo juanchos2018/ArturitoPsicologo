@@ -16,6 +16,8 @@ import com.example.arturitopsicologo.View.PerfilActivity;
 import com.google.android.gms.tasks.OnCompleteListener;
 import com.google.android.gms.tasks.OnFailureListener;
 import com.google.android.gms.tasks.Task;
+import com.google.firebase.auth.FirebaseAuth;
+import com.google.firebase.auth.FirebaseUser;
 import com.google.firebase.database.DatabaseReference;
 import com.google.firebase.database.FirebaseDatabase;
 import com.google.firebase.database.annotations.NotNull;
@@ -28,12 +30,17 @@ public class MenuActivity extends AppCompatActivity  implements View.OnClickList
     CardView carHerramientas,cardPerfil,cardHorario;
     private DatabaseReference databaseReference;
 
-    Button btnperfil;
+    Button btnperfil,btnsalir;
+
+    private FirebaseAuth mAuth;
+    private FirebaseUser user;
+
     @Override
     protected void onCreate(Bundle savedInstanceState) {
         super.onCreate(savedInstanceState);
         setContentView(R.layout.activity_menu);
 
+        mAuth = FirebaseAuth.getInstance();
 
 
         inputs();
@@ -43,6 +50,9 @@ public class MenuActivity extends AppCompatActivity  implements View.OnClickList
         carHerramientas=(CardView) findViewById(R.id.carHerramientas);
         cardPerfil=(CardView) findViewById(R.id.cardPerfil);
         cardHorario=(CardView) findViewById(R.id.cardHorario);
+
+        btnsalir=(Button)findViewById(R.id.btnsalir);
+        btnsalir.setOnClickListener(this);
 
 
         cardPerfil.setOnClickListener(this);
@@ -66,9 +76,18 @@ public class MenuActivity extends AppCompatActivity  implements View.OnClickList
 
                 startActivity(new Intent(this, HorarioActivity.class));
                 break;
+            case R.id.btnsalir:
+
+              Salir();
+                break;
         }
     }
-    
+
+    private void  Salir(){
+        mAuth.signOut();
+        startActivity(new Intent(this,LoginActivity.class));
+    }
+
     
     private  void  kmar(){
         databaseReference = FirebaseDatabase.getInstance().getReference().child("Categoria");
