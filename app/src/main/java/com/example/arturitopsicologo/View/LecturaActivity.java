@@ -3,6 +3,7 @@ package com.example.arturitopsicologo.View;
 import androidx.annotation.RequiresApi;
 import androidx.appcompat.app.AppCompatActivity;
 
+import android.content.Intent;
 import android.os.Build;
 import android.os.Bundle;
 import android.text.TextUtils;
@@ -11,6 +12,7 @@ import android.widget.Button;
 import android.widget.EditText;
 import android.widget.LinearLayout;
 import android.widget.RadioButton;
+import android.widget.Toast;
 
 import com.example.arturitopsicologo.Interface.InterfaceLectura;
 import com.example.arturitopsicologo.Model.Lectura;
@@ -32,6 +34,7 @@ public class LecturaActivity extends AppCompatActivity implements View.OnClickLi
     String CategoriaId= "-N3iTyAojHIFohK3ft4U";
     String id;
 
+    Lectura lecturaObjec;
     @RequiresApi(api = Build.VERSION_CODES.M)
     @Override
     protected void onCreate(Bundle savedInstanceState) {
@@ -47,7 +50,7 @@ public class LecturaActivity extends AppCompatActivity implements View.OnClickLi
         search=(RadioButton)findViewById(R.id.search);
         offer=(RadioButton)findViewById(R.id.offer);
         search.setChecked(true);
-
+       // lectura = new Lectura();
 
         search.setOnClickListener(this);
         offer.setOnClickListener(this);
@@ -58,6 +61,7 @@ public class LecturaActivity extends AppCompatActivity implements View.OnClickLi
         id=getIntent().getStringExtra("id");
 
 
+
     }
 
 
@@ -66,6 +70,7 @@ public class LecturaActivity extends AppCompatActivity implements View.OnClickLi
         super.onStart();
         if (id!=""){
             viewLectura(id);
+            btnpublicar.setVisibility(View.VISIBLE);
         }
     }
 
@@ -76,6 +81,8 @@ public class LecturaActivity extends AppCompatActivity implements View.OnClickLi
             etpregunta1.setText(value.getPregunta1());
             etpregunta2.setText(value.getPregunta2());
             etpregunta3.setText(value.getPregunta3());
+            lecturaObjec=value;
+            Toast.makeText(this, lecturaObjec.getPregunta1(), Toast.LENGTH_SHORT).show();
 
         }, CategoriaId,id);
     }
@@ -91,6 +98,7 @@ public class LecturaActivity extends AppCompatActivity implements View.OnClickLi
         btnguardar=(Button) findViewById(R.id.btnguardar);
         btnpublicar=(Button) findViewById(R.id.btnpublicar);
         btnguardar.setOnClickListener(this);
+        btnpublicar.setOnClickListener(this);
 
     }
 
@@ -117,6 +125,17 @@ public class LecturaActivity extends AppCompatActivity implements View.OnClickLi
                 String preunga2=etpregunta2.getText().toString();
                 String preunga3=etpregunta3.getText().toString();
                 store(title,lectura,preunga1,preunga2,preunga3);
+                break;
+            case R.id.btnpublicar:
+
+               // String lectur_id="-N3iTyAojHIFohK3ft4U";
+                Intent intent = new Intent(this,PacienteActivity.class);
+                Bundle bundle = new Bundle();
+                bundle.putString("categoria_id",CategoriaId);
+                bundle.putSerializable("id",lecturaObjec.getId());
+                bundle.putSerializable("object",lecturaObjec);
+                intent.putExtras(bundle);
+                startActivity(intent);
                 break;
         }
 
@@ -147,6 +166,9 @@ public class LecturaActivity extends AppCompatActivity implements View.OnClickLi
             obj.setPregunta1(preunga1);
             obj.setPregunta2(preunga2);
             obj.setPregunta3(preunga3);
+            obj.setRespuesta1("");
+            obj.setRespuesta2("");
+            obj.setRespuesta3("");
             presenter.store(obj);
         }
     }

@@ -146,7 +146,7 @@ public class HorasActivity extends AppCompatActivity  implements View.OnClickLis
             @Override
             public void onClick(View v) {
                 String hora_incio=btnhora1.getText().toString();
-                String hora_fin=btnhora1.getText().toString();
+                String hora_fin=btnhora2.getText().toString();
                 store(hora_incio,hora_fin);
                 alert.dismiss();
             }

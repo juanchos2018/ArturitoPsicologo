@@ -52,6 +52,7 @@
     </androidx.cardview.widget.CardView>
 
     <androidx.cardview.widget.CardView
+        android:id="@+id/carAtencion"
         android:layout_width="match_parent"
         android:layout_margin="20dp"
         app:cardCornerRadius="20dp"
@@ -93,6 +94,7 @@
     </androidx.cardview.widget.CardView>
 
     <androidx.cardview.widget.CardView
+        android:id="@+id/cardmemoria"
         android:layout_width="match_parent"
         android:layout_margin="20dp"
         app:cardCornerRadius="20dp"

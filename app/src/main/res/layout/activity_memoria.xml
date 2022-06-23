@@ -1,0 +1,104 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:orientation="vertical"
+    android:layout_width="match_parent"
+    android:padding="20dp"
+    android:background="@drawable/bg_color"
+    android:layout_height="match_parent"
+    tools:context=".View.MemoriaActivity">
+
+    <androidx.cardview.widget.CardView
+        app:cardCornerRadius="15dp"
+        android:layout_width="match_parent"
+        android:layout_height="450dp">
+
+        <LinearLayout
+            android:orientation="vertical"
+            android:gravity="center_horizontal"
+            android:padding="30dp"
+            android:layout_width="match_parent"
+            android:layout_height="match_parent">
+
+            <TextView
+
+                android:textSize="19sp"
+                android:textStyle="bold"
+                android:textColor="@color/red"
+                android:text="Seleccione Figura"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content">
+
+            </TextView>
+
+            <LinearLayout
+                android:layout_marginTop="20dp"
+                android:gravity="center_horizontal"
+                android:orientation="horizontal"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content">
+                <ImageView
+                    android:id="@+id/imgluna"
+                    android:layout_marginRight="10dp"
+                    android:src="@drawable/luna"
+                    android:layout_width="80dp"
+                    android:layout_height="80dp">
+                </ImageView>
+                <ImageView
+                    android:id="@+id/imgflobo"
+                    android:layout_marginRight="10dp"
+                    android:src="@drawable/globos"
+                    android:layout_width="80dp"
+                    android:layout_height="80dp">
+                </ImageView>
+                <ImageView
+                    android:id="@+id/imgtele"
+                    android:src="@drawable/televisor"
+                    android:layout_width="80dp"
+                    android:layout_height="80dp">
+                </ImageView>
+            </LinearLayout>
+
+            <LinearLayout
+                android:layout_marginTop="20dp"
+                android:orientation="horizontal"
+                android:layout_width="match_parent"
+                android:gravity="center_horizontal"
+                android:layout_height="wrap_content">
+                <ImageView
+                    android:id="@+id/imgpelota"
+                    android:src="@drawable/pelota"
+                    android:layout_width="80dp"
+                    android:layout_height="80dp">
+                </ImageView>
+                <ImageView
+                    android:id="@+id/imglapíz"
+                    android:src="@drawable/lapiz"
+                    android:layout_width="80dp"
+                    android:layout_height="80dp">
+                </ImageView>
+
+                <ImageView
+                    android:id="@+id/imgperro"
+                    android:src="@drawable/perro"
+                    android:layout_width="80dp"
+                    android:layout_height="80dp">
+                </ImageView>
+            </LinearLayout>
+
+        </LinearLayout>
+    </androidx.cardview.widget.CardView>
+
+
+    <Button
+        android:layout_marginTop="10dp"
+        android:layout_gravity="right"
+        android:id="@+id/btnsiguiente"
+        android:text="Soguiente"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content">
+
+    </Button>
+
+</LinearLayout>

@@ -53,9 +53,7 @@ public class PresenterPsicologo {
         //mAuth = FirebaseAuth.getInstance();
     }
 
-
     public void info(InterfacePsicologo interfacePsicologo, String user_id) {
-
         databaseReference.child("Psicologos").child(user_id).addValueEventListener(new ValueEventListener() {
             @Override
             public void onDataChange(@NonNull @org.jetbrains.annotations.NotNull DataSnapshot snapshot) {
@@ -150,7 +148,6 @@ public class PresenterPsicologo {
             Toast.makeText(mContext, "No selecciono Imagen ", Toast.LENGTH_SHORT).show();
         }
     }
-
 
     private void  DialogOk(String mensaje){
         builder = new AlertDialog.Builder(mContext);

@@ -1,6 +1,6 @@
 package com.example.arturitopsicologo.Model;
 
-public class Categoria {
+public class    Categoria {
 
     String id;
     String nombre;

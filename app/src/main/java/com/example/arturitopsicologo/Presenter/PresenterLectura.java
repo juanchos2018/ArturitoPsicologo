@@ -107,6 +107,7 @@ public class PresenterLectura {
             }
         });
     }
+
     private  void  update(Lectura lectura){
 
         Map<String,Object> obj= new HashMap<>();

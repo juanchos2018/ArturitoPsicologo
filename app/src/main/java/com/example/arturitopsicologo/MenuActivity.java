@@ -10,6 +10,7 @@ import android.view.View;
 import android.widget.Button;
 import android.widget.Toast;
 
+import com.example.arturitopsicologo.View.CategoriaActivity;
 import com.example.arturitopsicologo.View.HerramientasActivity;
 import com.example.arturitopsicologo.View.HorarioActivity;
 import com.example.arturitopsicologo.View.PerfilActivity;
@@ -66,7 +67,7 @@ public class MenuActivity extends AppCompatActivity  implements View.OnClickList
     public void onClick(View view) {
         switch (view.getId()){
             case R.id.carHerramientas:
-                startActivity(new Intent(this, HerramientasActivity.class));
+                startActivity(new Intent(this, CategoriaActivity.class));
                 break;
             case R.id.cardPerfil:
 

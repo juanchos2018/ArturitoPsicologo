@@ -12,7 +12,7 @@ import com.example.arturitopsicologo.R;
 public class CategoriaActivity extends AppCompatActivity implements View.OnClickListener {
 
 
-    CardView cardlectura;
+    CardView cardlectura,carAtencion,cardmemoria;
     @Override
     protected void onCreate(Bundle savedInstanceState) {
         super.onCreate(savedInstanceState);
@@ -20,7 +20,11 @@ public class CategoriaActivity extends AppCompatActivity implements View.OnClick
 
 
         cardlectura=(CardView) findViewById(R.id.cardlectura);
+        carAtencion=(CardView) findViewById(R.id.carAtencion);
+        cardmemoria=(CardView) findViewById(R.id.cardmemoria);
         cardlectura.setOnClickListener(this);
+        carAtencion.setOnClickListener(this);
+        cardmemoria.setOnClickListener(this);
     }
 
     @Override
@@ -30,6 +34,14 @@ public class CategoriaActivity extends AppCompatActivity implements View.OnClick
             case  R.id.cardlectura:
                 startActivity(new Intent(this,LecturasActivity.class));
                 break;
+            case R.id.carAtencion:
+                startActivity(new Intent(this,AtencionActivity.class));
+                break;
+            case R.id.cardmemoria:
+                startActivity(new Intent(this,MemoriaActivity.class));
+                break;
+
+
         }
     }
 }

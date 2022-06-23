@@ -65,7 +65,7 @@
             </TextView>
             <TextView
                 android:id="@+id/tvnombre"
-                android:hint="juan carlos"
+                android:hint="keny"
                 android:textSize="16sp"
                 android:layout_width="match_parent"
                 android:layout_height="wrap_content">
@@ -73,7 +73,7 @@
             </TextView>
 
             <TextView
-                android:text="Apellidos"
+                android:text=""
                 android:layout_marginTop="10dp"
                 android:textSize="16sp"
                 android:textStyle="bold"
@@ -101,7 +101,7 @@
             </TextView>
             <TextView
                 android:id="@+id/tvtelefono"
-                android:hint="9848943493"
+                android:hint=""
                 android:textSize="16sp"
                 android:layout_width="match_parent"
                 android:layout_height="wrap_content">
@@ -118,7 +118,7 @@
             </TextView>
             <TextView
                 android:id="@+id/tvcorreo"
-                android:hint="9848943493"
+                android:hint=""
                 android:textSize="16sp"
                 android:layout_width="match_parent"
                 android:layout_height="wrap_content">

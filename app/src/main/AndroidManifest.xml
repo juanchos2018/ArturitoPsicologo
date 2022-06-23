@@ -10,6 +10,12 @@
         android:supportsRtl="true"
         android:theme="@style/Theme.ArturitoPsicologo">
         <activity
+            android:name=".View.MemoriaActivity"
+            android:exported="false" />
+        <activity
+            android:name=".View.AtencionActivity"
+            android:exported="false" />
+        <activity
             android:name=".View.PacienteActivity"
             android:exported="false" />
         <activity

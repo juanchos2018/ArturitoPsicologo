@@ -32,7 +32,6 @@ import java.util.Locale;
 public class HorarioActivity extends AppCompatActivity  implements View.OnClickListener, InterfaceFecha {
 
 
-
     FloatingActionButton btnaddFecha;
 
     public final Calendar c = Calendar.getInstance();
@@ -84,9 +83,7 @@ public class HorarioActivity extends AppCompatActivity  implements View.OnClickL
     private void inputs() {
 
         btnaddFecha=(FloatingActionButton) findViewById(R.id.btnaddFecha);
-
         btnaddFecha.setOnClickListener(this);
-
     }
 
     @Override
@@ -123,6 +120,7 @@ public class HorarioActivity extends AppCompatActivity  implements View.OnClickL
             Toast.makeText(this, "fecha ncesaria", Toast.LENGTH_SHORT).show();
         }
         else{
+
             Fecha obj = new Fecha();
             obj.setId(id);
             obj.setUser_id(user_id);
