@@ -48,6 +48,7 @@ public class PresenterPaciente {
     Categoria categoria;
     Object object;
     String id;
+
     public PresenterPaciente(Context mContext, DatabaseReference databaseReference,String psicologo_id,String CategoriaId, Object object,String id) {
         this.mContext = mContext;
         this.databaseReference = databaseReference;
@@ -85,10 +86,9 @@ public class PresenterPaciente {
 
     private  void saveTaller(String paciente_id){
         progressDialog= new ProgressDialog(mContext);
-        progressDialog.setMessage("Cargando..");
+        progressDialog.setMessage("Cargando...");
         progressDialog.setCancelable(false);
         progressDialog.show();
-        //String key =databaseReference.push().getKey();
 
         databaseReference.child("TallerPaciente").child(paciente_id).child(CategoriaId).child(id).setValue(object).addOnCompleteListener(new OnCompleteListener<Void>() {
             @Override

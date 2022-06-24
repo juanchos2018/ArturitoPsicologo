@@ -24,6 +24,7 @@ public class AtencionActivity extends AppCompatActivity  implements View.OnClick
     private DatabaseReference reference;
     Atencion atencion;
     String figura;
+
     @Override
     protected void onCreate(Bundle savedInstanceState) {
         super.onCreate(savedInstanceState);
@@ -75,9 +76,9 @@ public class AtencionActivity extends AppCompatActivity  implements View.OnClick
                 atencion.setFigura(figura);
                 atencion.setCantidad("5");
                 atencion.setId(keyatencion());
-                atencion.setCantidadclick("");
-                atencion.setCantidafiguras("");
-                atencion.setEstado("");
+                atencion.setCantidadclick("0");
+                atencion.setCantidafiguras("0");
+                atencion.setEstado("nuevo");
 
                 Intent intent = new Intent(this,PacienteActivity.class);
                 Bundle bundle = new Bundle();

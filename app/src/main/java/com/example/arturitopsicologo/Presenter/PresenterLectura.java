@@ -109,7 +109,10 @@ public class PresenterLectura {
     }
 
     private  void  update(Lectura lectura){
-
+        progressDialog= new ProgressDialog(mContext);
+        progressDialog.setMessage("Cargando..");
+        progressDialog.setCancelable(false);
+        progressDialog.show();
         Map<String,Object> obj= new HashMap<>();
         obj.put("titulo",lectura.getTitulo());
         obj.put("categoriaId",lectura.getCategoriaId());

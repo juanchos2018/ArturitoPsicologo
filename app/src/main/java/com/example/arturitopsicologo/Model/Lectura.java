@@ -15,6 +15,7 @@ public class Lectura implements Serializable {
     String  respuesta1;
     String  respuesta2;
     String  respuesta3;
+    String  estado;
 
 
     public  Lectura(){
@@ -101,5 +102,14 @@ public class Lectura implements Serializable {
 
     public void setRespuesta3(String respuesta3) {
         this.respuesta3 = respuesta3;
+    }
+
+
+    public String getEstado() {
+        return estado;
+    }
+
+    public void setEstado(String estado) {
+        this.estado = estado;
     }
 }

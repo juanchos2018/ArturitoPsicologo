@@ -57,11 +57,7 @@ public class LecturaActivity extends AppCompatActivity implements View.OnClickLi
         offer.setTextColor(getColor(R.color.red));
 
         inputs();
-
         id=getIntent().getStringExtra("id");
-
-
-
     }
 
 
@@ -169,6 +165,7 @@ public class LecturaActivity extends AppCompatActivity implements View.OnClickLi
             obj.setRespuesta1("");
             obj.setRespuesta2("");
             obj.setRespuesta3("");
+            obj.setEstado("nuevo");
             presenter.store(obj);
         }
     }
