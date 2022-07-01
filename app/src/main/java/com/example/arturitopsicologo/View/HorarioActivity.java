@@ -1,16 +1,21 @@
 package com.example.arturitopsicologo.View;
 
+import static android.content.DialogInterface.BUTTON_NEGATIVE;
+import static android.content.DialogInterface.BUTTON_NEUTRAL;
+
 import androidx.appcompat.app.AppCompatActivity;
 import androidx.recyclerview.widget.LinearLayoutManager;
 import androidx.recyclerview.widget.RecyclerView;
 
 import android.app.DatePickerDialog;
 import android.content.Context;
+import android.content.DialogInterface;
 import android.os.Bundle;
 import android.text.TextUtils;
 import android.util.Log;
 import android.view.View;
 import android.widget.DatePicker;
+import android.widget.ImageView;
 import android.widget.Toast;
 
 import com.example.arturitopsicologo.Interface.InterfaceFecha;
@@ -35,7 +40,7 @@ public class HorarioActivity extends AppCompatActivity  implements View.OnClickL
     FloatingActionButton btnaddFecha;
 
     public final Calendar c = Calendar.getInstance();
-    //Variables para obtener la fecha
+
     private static final String CERO = "0";
     private static final String BARRA = "-";
     final int mes = c.get(Calendar.MONTH);
@@ -53,7 +58,10 @@ public class HorarioActivity extends AppCompatActivity  implements View.OnClickL
     private DatabaseReference reference;
     private FirebaseAuth mAuth;
 
+    ImageView imgfinish;
 
+
+    DatePickerDialog recogerFecha;
     @Override
     protected void onCreate(Bundle savedInstanceState) {
         super.onCreate(savedInstanceState);
@@ -81,7 +89,8 @@ public class HorarioActivity extends AppCompatActivity  implements View.OnClickL
     }
 
     private void inputs() {
-
+        imgfinish=(ImageView) findViewById(R.id.imgfinish);
+        imgfinish.setOnClickListener(this);
         btnaddFecha=(FloatingActionButton) findViewById(R.id.btnaddFecha);
         btnaddFecha.setOnClickListener(this);
     }
@@ -90,13 +99,20 @@ public class HorarioActivity extends AppCompatActivity  implements View.OnClickL
     public void onClick(View view) {
         switch (view.getId()){
             case  R.id.btnaddFecha:
-                DialoFecha("");
+                //DialoFecha("");
+                DialogoFecha2("");
+                break;
+            case R.id.imgfinish:
+                finishs();
                 break;
         }
     }
+    private  void  finishs(){
+        finish();
+    }
     private  void  DialoFecha(String id){
 
-        DatePickerDialog recogerFecha = new DatePickerDialog(this, new DatePickerDialog.OnDateSetListener() {
+         recogerFecha = new DatePickerDialog(this, new DatePickerDialog.OnDateSetListener() {
             @Override
             public void onDateSet(DatePicker view, int year, int month, int dayOfMonth) {
                 final int mesActual = month + 1;
@@ -106,11 +122,81 @@ public class HorarioActivity extends AppCompatActivity  implements View.OnClickL
                 //etfecha.setText(diaFormateado + BARRA + mesFormateado + BARRA + year);
                 tgl_daftar_date = c.getTime();
                 String fecha =diaFormateado + BARRA + mesFormateado + BARRA + year;
-                Toast.makeText(HorarioActivity.this, fecha, Toast.LENGTH_SHORT).show();
                 store(fecha,tgl_daftar_date.toString(),id);
             }
         },anio, mes, dia);
         recogerFecha.show();
+    }
+
+    private  void  DialogoFecha(){
+        DatePickerDialog picker = new DatePickerDialog(
+                this,
+                null, // instead of a listener
+                anio, mes, dia);
+        picker.setCancelable(true);
+        picker.setCanceledOnTouchOutside(true);
+
+        picker.setButton(DialogInterface.BUTTON_POSITIVE, "OK",
+
+                new DialogInterface.OnClickListener() {
+                    @Override
+                    public void onClick(DialogInterface dialog, int which) {
+                        Calendar newDate = Calendar.getInstance();
+                        int dayOfMonth = picker.getDatePicker().getDayOfMonth();
+                        int monthOfYear = picker.getDatePicker().getMonth() ;
+                        int year = picker.getDatePicker().getYear();
+                        Toast.makeText(HorarioActivity.this, "positive", Toast.LENGTH_SHORT).show();
+                    }
+                });
+        picker.setButton(DialogInterface.BUTTON_NEGATIVE, "Cancel",
+                new DialogInterface.OnClickListener() {
+                    @Override
+                    public void onClick(DialogInterface dialog, int which) {
+                        Toast.makeText(HorarioActivity.this, "negative", Toast.LENGTH_SHORT).show();
+                    }
+                });
+        picker.show();
+    }
+    private  void  DialogoFecha2(String id){
+
+        Calendar newCalendar = Calendar.getInstance();
+        final DatePickerDialog datepicker = new DatePickerDialog(this,null, newCalendar.get(Calendar.YEAR),
+                newCalendar.get(Calendar.MONTH),
+                newCalendar.get(Calendar.DAY_OF_MONTH));
+        datepicker.setCancelable(true);
+        datepicker.setCanceledOnTouchOutside(true);
+        datepicker.setButton(DialogInterface.BUTTON_POSITIVE, "OK",
+                new DialogInterface.OnClickListener() {
+                    @Override
+                    public void onClick(DialogInterface dialog, int which) {
+                        Calendar newDate = Calendar.getInstance();
+                        int dayOfMonth = datepicker.getDatePicker().getDayOfMonth();
+                        int monthOfYear = datepicker.getDatePicker().getMonth() ;
+                        int year = datepicker.getDatePicker().getYear();
+                        newDate.set(year, monthOfYear, dayOfMonth);
+                        dialog.dismiss();
+                        final int mesActual = monthOfYear + 1;
+                        String diaFormateado = (dayOfMonth < 10)? CERO + String.valueOf(dayOfMonth):String.valueOf(dayOfMonth);
+                        String mesFormateado = (mesActual < 10)? CERO + String.valueOf(mesActual):String.valueOf(mesActual);
+                        //etfecha.setText(diaFormateado + BARRA + mesFormateado + BARRA + year);
+                        tgl_daftar_date = c.getTime();
+                        String fecha =diaFormateado + BARRA + mesFormateado + BARRA + year;
+                        store(fecha,tgl_daftar_date.toString(),id);
+
+
+                        //Toast.makeText(HorarioActivity.this, fecha, Toast.LENGTH_SHORT).show();
+                        //tv.setText(CommonDateFunction.format(newDate.getTime(), CommonDateFunction.FORMAT_DD_MMM_YYYY));
+                    }
+                });
+        datepicker.setButton(DialogInterface.BUTTON_NEGATIVE, "Cancel",
+                new DialogInterface.OnClickListener() {
+                    @Override
+                    public void onClick(DialogInterface dialog, int which) {
+                        dialog.cancel();
+                        // Log.d("Picker", "Cancel!");
+                    }
+                });
+        datepicker.show();
     }
     private void store(String fecha, String fecha1,String id) {
 
@@ -120,7 +206,6 @@ public class HorarioActivity extends AppCompatActivity  implements View.OnClickL
             Toast.makeText(this, "fecha ncesaria", Toast.LENGTH_SHORT).show();
         }
         else{
-
             Fecha obj = new Fecha();
             obj.setId(id);
             obj.setUser_id(user_id);
@@ -133,7 +218,8 @@ public class HorarioActivity extends AppCompatActivity  implements View.OnClickL
 
     @Override
     public void onCallback(Fecha value) {
-        DialoFecha(value.getId());
+        //DialoFecha(value.getId());
+        DialogoFecha2(value.getId());
     }
 
     @Override

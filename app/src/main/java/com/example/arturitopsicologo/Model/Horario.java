@@ -8,6 +8,7 @@ public class Horario {
     private String  hora_inicio;
     private String  hora_fin;
     private String  estado;
+    private String  turno;
 
 
     public String getId() {
@@ -56,5 +57,13 @@ public class Horario {
 
     public void setEstado(String estado) {
         this.estado = estado;
+    }
+
+    public String getTurno() {
+        return turno;
+    }
+
+    public void setTurno(String turno) {
+        this.turno = turno;
     }
 }

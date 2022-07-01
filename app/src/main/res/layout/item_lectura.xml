@@ -56,12 +56,12 @@
                     android:layout_height="35dp">
                 </Button>
                 <Button
-                    android:id="@+id/btneliminar"
-                    android:text="eliminar"
+                    android:id="@+id/btnanular"
+                    android:text="Anular"
                     android:layout_marginLeft="2dp"
                     android:layout_width="0dp"
                     android:layout_weight="1"
-                    android:textSize="12sp"
+                    android:textSize="11sp"
                     android:background="@drawable/borde_uno"
                     android:layout_height="35dp">
                 </Button>

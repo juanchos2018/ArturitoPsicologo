@@ -4,8 +4,11 @@ import androidx.appcompat.app.AppCompatActivity;
 import androidx.recyclerview.widget.LinearLayoutManager;
 import androidx.recyclerview.widget.RecyclerView;
 
+import android.content.Intent;
 import android.os.Bundle;
 import android.util.Log;
+import android.view.View;
+import android.widget.ImageView;
 
 import com.example.arturitopsicologo.Model.Lectura;
 import com.example.arturitopsicologo.Presenter.PresenterFecha;
@@ -15,7 +18,7 @@ import com.google.firebase.auth.FirebaseAuth;
 import com.google.firebase.database.DatabaseReference;
 import com.google.firebase.database.FirebaseDatabase;
 
-public class PacienteActivity extends AppCompatActivity {
+public class PacienteActivity extends AppCompatActivity  implements View.OnClickListener {
 
 
     PresenterPaciente presenter;
@@ -26,12 +29,13 @@ public class PacienteActivity extends AppCompatActivity {
     String CategoriaId;
     Lectura lectura;
     Object object;
+    ImageView imgfinish;
+
     String id;
     @Override
     protected void onCreate(Bundle savedInstanceState) {
         super.onCreate(savedInstanceState);
         setContentView(R.layout.activity_paciente);
-
 
         reference= FirebaseDatabase.getInstance().getReference();
         mAuth = FirebaseAuth.getInstance();
@@ -42,6 +46,9 @@ public class PacienteActivity extends AppCompatActivity {
         object =  getIntent().getSerializableExtra("object");
         presenter= new PresenterPaciente(this,reference,user_id,CategoriaId,object,id);
 
+
+        imgfinish=(ImageView) findViewById(R.id.imgfinish);
+        imgfinish.setOnClickListener(this);
         inputs();
 
     }
@@ -51,7 +58,9 @@ public class PacienteActivity extends AppCompatActivity {
         super.onStart();
         records();
     }
-
+    private  void  finishs(){
+        finish();
+    }
     private void records() {
 
         RecyclerView recyclerView=(RecyclerView)findViewById(R.id.recyclerpsicologpaciente);
@@ -62,5 +71,14 @@ public class PacienteActivity extends AppCompatActivity {
 
     private void inputs() {
 
+    }
+
+    @Override
+    public void onClick(View view) {
+        switch (view.getId()){
+            case R.id.imgfinish:
+                finishs();
+                break;
+        }
     }
 }

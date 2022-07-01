@@ -24,6 +24,8 @@ public class AtencionActivity extends AppCompatActivity  implements View.OnClick
     private DatabaseReference reference;
     Atencion atencion;
     String figura;
+    ImageView imgfinish;
+
 
     @Override
     protected void onCreate(Bundle savedInstanceState) {
@@ -43,6 +45,9 @@ public class AtencionActivity extends AppCompatActivity  implements View.OnClick
         imgtriangulo=(ImageView) findViewById(R.id.imgtriangulo);
         imgrombo=(ImageView) findViewById(R.id.imgrombo);
         btnsiguiente=(Button) findViewById(R.id.btnsiguiente);
+
+        imgfinish=(ImageView) findViewById(R.id.imgfinish);
+        imgfinish.setOnClickListener(this);
 
         imgciruclo.setOnClickListener(this);
         imgrectagulo.setOnClickListener(this);
@@ -71,6 +76,7 @@ public class AtencionActivity extends AppCompatActivity  implements View.OnClick
                 figura="rombo";
                 break;
             case R.id.btnsiguiente:
+
                 atencion = new Atencion();
                 atencion.setCategoriaId(CategoriaId);
                 atencion.setFigura(figura);
@@ -79,6 +85,7 @@ public class AtencionActivity extends AppCompatActivity  implements View.OnClick
                 atencion.setCantidadclick("0");
                 atencion.setCantidafiguras("0");
                 atencion.setEstado("nuevo");
+                atencion.setPuntaje("0");
 
                 Intent intent = new Intent(this,PacienteActivity.class);
                 Bundle bundle = new Bundle();
@@ -87,6 +94,10 @@ public class AtencionActivity extends AppCompatActivity  implements View.OnClick
                 bundle.putSerializable("object",atencion);
                 intent.putExtras(bundle);
                 startActivity(intent);
+
+                break;
+            case R.id.imgfinish:
+                finishs();
                 break;
         }
         Toast.makeText(this, "selecciono "+figura, Toast.LENGTH_SHORT).show();
@@ -102,6 +113,9 @@ public class AtencionActivity extends AppCompatActivity  implements View.OnClick
             pswd+=(key.charAt((int)(Math.random() * key.length())));
         }
         return pswd;
+    }
+    private  void  finishs(){
+        finish();
     }
 
     private  void  ada(){

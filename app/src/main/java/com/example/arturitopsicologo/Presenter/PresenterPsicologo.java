@@ -101,6 +101,51 @@ public class PresenterPsicologo {
     }
 
 
+    public void setImage(Uri uriphoto) {
+        progressDialog= new ProgressDialog(mContext);
+        progressDialog.setMessage("Cargando..");
+        progressDialog.setCancelable(false);
+        progressDialog.show();
+        StorageReference fotoref=storageReference.child("fotos").child(uriphoto.getLastPathSegment());
+        fotoref.putFile(uriphoto).continueWithTask(new Continuation<UploadTask.TaskSnapshot, Task<Uri>>() {
+            @Override
+            public Task<Uri> then(@NonNull @org.jetbrains.annotations.NotNull Task<UploadTask.TaskSnapshot> task) throws Exception {
+                if (!task.isSuccessful()){
+                    throw  new Exception();
+                }
+                return fotoref.getDownloadUrl();
+            }
+        }).addOnCompleteListener(new OnCompleteListener<Uri>() {
+            @Override
+            public void onComplete(@NonNull @org.jetbrains.annotations.NotNull Task<Uri> task) {
+                if (task.isSuccessful()){
+                    Uri uridownload =task.getResult();
+                    String key =databaseReference.push().getKey();
+                    Map<String,Object> obj= new HashMap<>();
+                    obj.put("photo",uridownload.toString());
+                    obj.put("tipo","perro");
+                    obj.put("estado","activo");
+
+                    databaseReference.child("Figuras").child(key).setValue(obj).addOnCompleteListener(new OnCompleteListener<Void>() {
+                        @Override
+                        public void onComplete(@NonNull @org.jetbrains.annotations.NotNull Task<Void> task) {
+                            if (task.isSuccessful()){
+                                progressDialog.dismiss();
+                                Toast.makeText(mContext, "Actualizado foto", Toast.LENGTH_SHORT).show();
+                            }
+                        }
+                    }).addOnFailureListener(new OnFailureListener() {
+                        @Override
+                        public void onFailure(@NonNull @org.jetbrains.annotations.NotNull Exception e) {
+                            Toast.makeText(mContext, "err "+e.getMessage(), Toast.LENGTH_SHORT).show();
+                            progressDialog.dismiss();
+                        }
+                    });
+                }
+            }
+        });
+    }
+
     public void saveImage(String user_id, Uri uriphoto){
 
         if (uriphoto!=null){

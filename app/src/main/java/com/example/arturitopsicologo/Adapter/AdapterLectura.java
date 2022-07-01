@@ -12,6 +12,7 @@ import android.widget.TextView;
 import androidx.annotation.NonNull;
 import androidx.recyclerview.widget.RecyclerView;
 
+import com.example.arturitopsicologo.Interface.InterfaceClick;
 import com.example.arturitopsicologo.Model.Lectura;
 import com.example.arturitopsicologo.R;
 import com.example.arturitopsicologo.View.LecturaActivity;
@@ -22,9 +23,11 @@ public class AdapterLectura extends RecyclerView.Adapter<AdapterLectura.ViewHold
 
     ArrayList<Lectura> listaItems;
     Context context;
-    public AdapterLectura(ArrayList<Lectura> listaItems,Context context) {
+    private InterfaceClick interfaceClick;
+    public AdapterLectura(ArrayList<Lectura> listaItems, Context context, InterfaceClick interfaceClick) {
         this.context=context;
         this.listaItems = listaItems;
+        this.interfaceClick=interfaceClick;
     }
 
     private View.OnClickListener listener;
@@ -65,6 +68,12 @@ public class AdapterLectura extends RecyclerView.Adapter<AdapterLectura.ViewHold
                     context.startActivity(intent);
                 }
             });
+            datgolder.btnanular.setOnClickListener(new View.OnClickListener() {
+                @Override
+                public void onClick(View view) {
+                    interfaceClick.onCallback(datgolder.id);
+                }
+            });
 
         }
     }
@@ -76,12 +85,13 @@ public class AdapterLectura extends RecyclerView.Adapter<AdapterLectura.ViewHold
 
     public class ViewHolderDatos extends RecyclerView.ViewHolder {
         TextView tvtitulo1;
-        Button btneditar;
+        Button btneditar,btnanular;
         String id;
         public ViewHolderDatos(@NonNull View itemView) {
             super(itemView);
             tvtitulo1=(TextView) itemView.findViewById(R.id.tvtitulo1);
             btneditar=(Button) itemView.findViewById(R.id.btneditar);
+            btnanular=(Button) itemView.findViewById(R.id.btnanular);
         }
     }
 }

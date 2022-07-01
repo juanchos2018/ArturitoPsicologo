@@ -18,15 +18,19 @@
         <entry key="..\:/Trabajo/chino/ArturitoPsicologo/app/src/main/res/drawable/btn_edit_borde.xml" value="0.2895" />
         <entry key="..\:/Trabajo/chino/ArturitoPsicologo/app/src/main/res/drawable/forma_uno.xml" value="0.239" />
         <entry key="..\:/Trabajo/chino/ArturitoPsicologo/app/src/main/res/drawable/ic_add.xml" value="0.2895" />
+        <entry key="..\:/Trabajo/chino/ArturitoPsicologo/app/src/main/res/drawable/ic_check.xml" value="0.1665" />
         <entry key="..\:/Trabajo/chino/ArturitoPsicologo/app/src/main/res/drawable/ic_clip.xml" value="0.2895" />
         <entry key="..\:/Trabajo/chino/ArturitoPsicologo/app/src/main/res/drawable/ic_edit_black_24dp.xml" value="0.2895" />
+        <entry key="..\:/Trabajo/chino/ArturitoPsicologo/app/src/main/res/drawable/ic_empty.xml" value="0.1665" />
         <entry key="..\:/Trabajo/chino/ArturitoPsicologo/app/src/main/res/drawable/ic_launcher_background.xml" value="0.2895" />
+        <entry key="..\:/Trabajo/chino/ArturitoPsicologo/app/src/main/res/drawable/ic_paly.xml" value="0.157" />
         <entry key="..\:/Trabajo/chino/ArturitoPsicologo/app/src/main/res/drawable/ic_search_black_24dp.xml" value="0.2895" />
         <entry key="..\:/Trabajo/chino/ArturitoPsicologo/app/src/main/res/drawable/input_4.xml" value="0.2895" />
         <entry key="..\:/Trabajo/chino/ArturitoPsicologo/app/src/main/res/drawable/pista_one.xml" value="0.2895" />
         <entry key="..\:/Trabajo/chino/ArturitoPsicologo/app/src/main/res/drawable/pista_thow.xml" value="0.2895" />
         <entry key="..\:/Trabajo/chino/ArturitoPsicologo/app/src/main/res/layout/activity_atencion.xml" value="0.3546875" />
         <entry key="..\:/Trabajo/chino/ArturitoPsicologo/app/src/main/res/layout/activity_categoria.xml" value="0.36666666666666664" />
+        <entry key="..\:/Trabajo/chino/ArturitoPsicologo/app/src/main/res/layout/activity_categoria_paciente.xml" value="0.33" />
         <entry key="..\:/Trabajo/chino/ArturitoPsicologo/app/src/main/res/layout/activity_citas.xml" value="0.36666666666666664" />
         <entry key="..\:/Trabajo/chino/ArturitoPsicologo/app/src/main/res/layout/activity_figura.xml" value="0.27291666666666664" />
         <entry key="..\:/Trabajo/chino/ArturitoPsicologo/app/src/main/res/layout/activity_herramientas.xml" value="0.36666666666666664" />
@@ -42,18 +46,32 @@
         <entry key="..\:/Trabajo/chino/ArturitoPsicologo/app/src/main/res/layout/activity_paciente.xml" value="0.27291666666666664" />
         <entry key="..\:/Trabajo/chino/ArturitoPsicologo/app/src/main/res/layout/activity_perfil.xml" value="0.36666666666666664" />
         <entry key="..\:/Trabajo/chino/ArturitoPsicologo/app/src/main/res/layout/activity_register.xml" value="0.36666666666666664" />
+        <entry key="..\:/Trabajo/chino/ArturitoPsicologo/app/src/main/res/layout/activity_resultado.xml" value="0.36666666666666664" />
         <entry key="..\:/Trabajo/chino/ArturitoPsicologo/app/src/main/res/layout/activity_splash.xml" value="0.36666666666666664" />
+        <entry key="..\:/Trabajo/chino/ArturitoPsicologo/app/src/main/res/layout/dialogo_atencion.xml" value="0.3625" />
         <entry key="..\:/Trabajo/chino/ArturitoPsicologo/app/src/main/res/layout/dialogo_horas.xml" value="0.36666666666666664" />
         <entry key="..\:/Trabajo/chino/ArturitoPsicologo/app/src/main/res/layout/dialogo_ok.xml" value="0.36666666666666664" />
+        <entry key="..\:/Trabajo/chino/ArturitoPsicologo/app/src/main/res/layout/dialogo_result_atencion.xml" value="0.3625" />
+        <entry key="..\:/Trabajo/chino/ArturitoPsicologo/app/src/main/res/layout/dialogo_result_lectura.xml" value="0.3625" />
+        <entry key="..\:/Trabajo/chino/ArturitoPsicologo/app/src/main/res/layout/dialogo_result_memoria.xml" value="0.340625" />
+        <entry key="..\:/Trabajo/chino/ArturitoPsicologo/app/src/main/res/layout/fragment_atencion.xml" value="0.3625" />
         <entry key="..\:/Trabajo/chino/ArturitoPsicologo/app/src/main/res/layout/fragment_edit.xml" value="0.33" />
+        <entry key="..\:/Trabajo/chino/ArturitoPsicologo/app/src/main/res/layout/fragment_lectura.xml" value="0.3625" />
+        <entry key="..\:/Trabajo/chino/ArturitoPsicologo/app/src/main/res/layout/fragment_memoria.xml" value="0.3625" />
         <entry key="..\:/Trabajo/chino/ArturitoPsicologo/app/src/main/res/layout/fragment_perfil.xml" value="0.36666666666666664" />
+        <entry key="..\:/Trabajo/chino/ArturitoPsicologo/app/src/main/res/layout/item_atencion.xml" value="0.2546875" />
         <entry key="..\:/Trabajo/chino/ArturitoPsicologo/app/src/main/res/layout/item_categorias.xml" value="0.36666666666666664" />
+        <entry key="..\:/Trabajo/chino/ArturitoPsicologo/app/src/main/res/layout/item_citas.xml" value="0.25" />
         <entry key="..\:/Trabajo/chino/ArturitoPsicologo/app/src/main/res/layout/item_fechas.xml" value="0.36666666666666664" />
         <entry key="..\:/Trabajo/chino/ArturitoPsicologo/app/src/main/res/layout/item_horarios.xml" value="0.36666666666666664" />
         <entry key="..\:/Trabajo/chino/ArturitoPsicologo/app/src/main/res/layout/item_lectura.xml" value="0.36666666666666664" />
+        <entry key="..\:/Trabajo/chino/ArturitoPsicologo/app/src/main/res/layout/item_lecura_dos.xml" value="0.25" />
+        <entry key="..\:/Trabajo/chino/ArturitoPsicologo/app/src/main/res/layout/item_memoria.xml" value="0.3625" />
         <entry key="..\:/Trabajo/chino/ArturitoPsicologo/app/src/main/res/layout/item_pacientes.xml" value="0.36666666666666664" />
         <entry key="..\:/Trabajo/chino/ArturitoPsicologo/app/src/main/res/layout/item_psicologo_paciente.xml" value="0.3546875" />
         <entry key="..\:/Trabajo/chino/ArturitoPsicologo/app/src/main/res/layout/prueba.xml" value="0.36666666666666664" />
+        <entry key="..\:/Trabajo/chino/ArturitoPsicologo/app/src/main/res/mipmap-anydpi-v26/ic_launcher.xml" value="0.1585" />
+        <entry key="..\:/Trabajo/chino/ArturitoPsicologo/app/src/main/res/mipmap-anydpi-v26/ic_launcher_round.xml" value="0.1585" />
       </map>
     </option>
   </component>

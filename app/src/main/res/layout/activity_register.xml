@@ -64,6 +64,7 @@
                             <EditText
                                 android:id="@+id/tvnombre"
                                 android:layout_width="match_parent"
+                                android:digits="abcdefghijklmnopqrstuvwxyzABCDEFGHIJKLMNOPQRSTUVWXYZ "
                                 android:layout_height="wrap_content"
                                 android:inputType="textEmailAddress"
                                 android:hint="Nombre"
@@ -79,6 +80,7 @@
                             <EditText
                                 android:id="@+id/tvapellido"
                                 android:layout_width="match_parent"
+                                android:digits="abcdefghijklmnopqrstuvwxyzABCDEFGHIJKLMNOPQRSTUVWXYZ "
                                 android:layout_height="wrap_content"
                                 android:inputType="textEmailAddress"
                                 android:hint="Apellido"
@@ -108,7 +110,8 @@
                                 android:id="@+id/tvclave"
                                 android:layout_width="match_parent"
                                 android:layout_height="wrap_content"
-                                android:inputType="textEmailAddress"
+                                android:inputType="textPassword"
+
                                 android:hint="Contraseña"
                                 />
                         </com.google.android.material.textfield.TextInputLayout>

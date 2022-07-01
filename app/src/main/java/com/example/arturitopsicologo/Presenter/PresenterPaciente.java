@@ -3,8 +3,10 @@ package com.example.arturitopsicologo.Presenter;
 import android.app.AlertDialog;
 import android.app.ProgressDialog;
 import android.content.Context;
+import android.content.Intent;
 import android.graphics.Color;
 import android.graphics.drawable.ColorDrawable;
+import android.os.Bundle;
 import android.util.Log;
 import android.view.LayoutInflater;
 import android.view.View;
@@ -16,13 +18,17 @@ import androidx.annotation.NonNull;
 import androidx.recyclerview.widget.RecyclerView;
 
 import com.example.arturitopsicologo.Adapter.AdapterLectura;
+import com.example.arturitopsicologo.Adapter.AdapterPacientes;
 import com.example.arturitopsicologo.Adapter.AdapterPsicologoPaciente;
 import com.example.arturitopsicologo.Interface.InterfaceClick;
 import com.example.arturitopsicologo.Interface.InterfaceLectura;
+import com.example.arturitopsicologo.Interface.InterfacePaciente;
 import com.example.arturitopsicologo.Model.Categoria;
 import com.example.arturitopsicologo.Model.Lectura;
+import com.example.arturitopsicologo.Model.Paciente;
 import com.example.arturitopsicologo.Model.PsicoloPaciente;
 import com.example.arturitopsicologo.R;
+import com.example.arturitopsicologo.View.CategoriaPacienteActivity;
 import com.google.android.gms.tasks.OnCompleteListener;
 import com.google.android.gms.tasks.OnFailureListener;
 import com.google.android.gms.tasks.Task;
@@ -40,6 +46,7 @@ public class PresenterPaciente {
     private DatabaseReference databaseReference;
     ProgressDialog progressDialog;
     private AdapterPsicologoPaciente adapter;
+    private AdapterPacientes adapter2;
     android.app.AlertDialog.Builder builder;
     AlertDialog alert;
     String psicologo_id;
@@ -84,7 +91,42 @@ public class PresenterPaciente {
         });
     }
 
+    public  void cargarRecyclerDos(RecyclerView recyclerView,String CategoriaId){
+        databaseReference.child("PsicologoPaciente").child(psicologo_id).addValueEventListener(new ValueEventListener() {
+            ArrayList<PsicoloPaciente> lista;
+            @Override
+            public void onDataChange(@NonNull @NotNull DataSnapshot snapshot) {
+                lista=new ArrayList<>();
+                for (DataSnapshot item:snapshot.getChildren()){
+                    PsicoloPaciente model=item.getValue(PsicoloPaciente.class);
+                    lista.add(model);
+                }
+                adapter2= new AdapterPacientes(lista, mContext);
+                recyclerView.setAdapter(adapter2);
+                adapter2.setOnClickListener(new View.OnClickListener() {
+                    @Override
+                    public void onClick(View view) {
+                        String  paciente_id =lista.get(recyclerView.getChildAdapterPosition(view)).getPaciente_id();
+                        goActivity(paciente_id);
+                    }
+                });
+            }
+            @Override
+            public void onCancelled(@NonNull @NotNull DatabaseError error) {
+
+            }
+        });
+    }
+    private  void  goActivity(String paciente_id){
+        Intent intent = new Intent(mContext, CategoriaPacienteActivity.class);
+        Bundle bundle = new Bundle();
+        bundle.putString("paciente_id",paciente_id);
+        intent.putExtras(bundle);
+        mContext.startActivity(intent);
+    }
+
     private  void saveTaller(String paciente_id){
+
         progressDialog= new ProgressDialog(mContext);
         progressDialog.setMessage("Cargando...");
         progressDialog.setCancelable(false);
@@ -107,6 +149,22 @@ public class PresenterPaciente {
         });
     }
 
+    public void infoPaciente(InterfacePaciente interfacePaciente, String paciente_id) {
+
+        databaseReference.child("Paciente").child(paciente_id).addValueEventListener(new ValueEventListener() {
+            @Override
+            public void onDataChange(@NonNull @org.jetbrains.annotations.NotNull DataSnapshot snapshot) {
+                if (snapshot.exists()){
+                    Paciente userModel = snapshot.getValue(Paciente.class);
+                    interfacePaciente.onCallback(userModel);
+                }
+            }
+            @Override
+            public void onCancelled(@NonNull @org.jetbrains.annotations.NotNull DatabaseError error) {
+                Toast.makeText(mContext, "Err "+error.getMessage(), Toast.LENGTH_SHORT).show();
+            }
+        });
+    }
 
     private void  DialogOk(String mensaje){
         builder = new AlertDialog.Builder(mContext);

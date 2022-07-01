@@ -102,7 +102,7 @@ public class PresenterFecha  {
         if (TextUtils.isEmpty(fecha.getId())){
             save(fecha);
         }else{
-         //   update(lectura);
+           update(fecha);
         }
     }
     private  void save(Fecha fecha){
@@ -125,18 +125,12 @@ public class PresenterFecha  {
         });
     }
 
-    private  void  update(Lectura lectura){
+    private  void  update(Fecha fecha){
 
         Map<String,Object> obj= new HashMap<>();
-        obj.put("titulo",lectura.getTitulo());
-        obj.put("categoriaId",lectura.getCategoriaId());
-        obj.put("id",lectura.getId());
-        obj.put("lectura",lectura.getLectura());
-        obj.put("pregunta1",lectura.getPregunta1());
-        obj.put("pregunta2",lectura.getPregunta2());
-        obj.put("pregunta3",lectura.getPregunta3());
+        obj.put("fecha",fecha.getFecha());
 
-        databaseReference.child("Lecturas").child(lectura.getCategoriaId()).child(lectura.getId()).updateChildren(obj).addOnCompleteListener(new OnCompleteListener<Void>() {
+        databaseReference.child("Fechas").child(fecha.getUser_id()).child(fecha.getId()).updateChildren(obj).addOnCompleteListener(new OnCompleteListener<Void>() {
             @Override
             public void onComplete(@NonNull @NotNull Task<Void> task) {
                 if (task.isSuccessful()){
@@ -152,6 +146,7 @@ public class PresenterFecha  {
             }
         });
     }
+
     private void  DialogOk(String mensaje){
         builder = new AlertDialog.Builder(mContext);
         Button btcerrrar;

@@ -13,6 +13,8 @@ import com.example.arturitopsicologo.Presenter.PresenterRegister;
 import com.google.firebase.database.DatabaseReference;
 import com.google.firebase.database.FirebaseDatabase;
 
+import java.util.regex.Pattern;
+
 public class RegisterActivity extends AppCompatActivity implements View.OnClickListener {
 
 
@@ -72,9 +74,20 @@ public class RegisterActivity extends AppCompatActivity implements View.OnClickL
         }
         else if (TextUtils.isEmpty(clave)){
             tvclave.setError("campo necesario");
+        }
+        else if (!isValidEmailId(correo.trim())){
+            tvcorreo.setError("correo invalido");
         }else {
             presenterLogin.register(nombre,apellido,correo,clave);
         }
     }
+    private boolean isValidEmailId(String email){
 
+        return Pattern.compile("^(([\\w-]+\\.)+[\\w-]+|([a-zA-Z]{1}|[\\w-]{2,}))@"
+                + "((([0-1]?[0-9]{1,2}|25[0-5]|2[0-4][0-9])\\.([0-1]?"
+                + "[0-9]{1,2}|25[0-5]|2[0-4][0-9])\\."
+                + "([0-1]?[0-9]{1,2}|25[0-5]|2[0-4][0-9])\\.([0-1]?"
+                + "[0-9]{1,2}|25[0-5]|2[0-4][0-9])){1}|"
+                + "([a-zA-Z]+[\\w-]+\\.)+[a-zA-Z]{2,4})$").matcher(email).matches();
+    }
 }

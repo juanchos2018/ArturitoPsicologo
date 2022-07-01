@@ -101,6 +101,7 @@ public class PerfilFragment extends Fragment {
                 tvnonbre.setText(value.getNombres());
                 tvapellidos.setText(value.getApellido());
                 tvcorreo.setText(value.getCorreo());
+                tvtelefono.setText(value.getPhone());
                 if (value.getPhoto().equals("default")){
                     imgperfil.setImageResource(R.drawable.default_profile_image);
                 }else{

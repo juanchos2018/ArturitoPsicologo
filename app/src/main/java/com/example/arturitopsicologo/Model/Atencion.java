@@ -12,6 +12,7 @@ public class Atencion implements Serializable {
    private String cantidafiguras;
    private String estado;
 
+   private  String puntaje;
 
 
    public Atencion(){
@@ -73,5 +74,13 @@ public class Atencion implements Serializable {
 
     public void setEstado(String estado) {
         this.estado = estado;
+    }
+
+    public String getPuntaje() {
+        return puntaje;
+    }
+
+    public void setPuntaje(String puntaje) {
+        this.puntaje = puntaje;
     }
 }

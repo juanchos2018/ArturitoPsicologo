@@ -11,9 +11,11 @@ import android.widget.Button;
 import android.widget.Toast;
 
 import com.example.arturitopsicologo.View.CategoriaActivity;
+import com.example.arturitopsicologo.View.CitasActivity;
 import com.example.arturitopsicologo.View.HerramientasActivity;
 import com.example.arturitopsicologo.View.HorarioActivity;
 import com.example.arturitopsicologo.View.PerfilActivity;
+import com.example.arturitopsicologo.View.ResultadoActivity;
 import com.google.android.gms.tasks.OnCompleteListener;
 import com.google.android.gms.tasks.OnFailureListener;
 import com.google.android.gms.tasks.Task;
@@ -28,11 +30,9 @@ import java.util.Map;
 
 public class MenuActivity extends AppCompatActivity  implements View.OnClickListener {
 
-    CardView carHerramientas,cardPerfil,cardHorario;
+    CardView carHerramientas,cardPerfil,cardHorario,cardcitas,cardresultado;
     private DatabaseReference databaseReference;
-
     Button btnperfil,btnsalir;
-
     private FirebaseAuth mAuth;
     private FirebaseUser user;
 
@@ -43,14 +43,16 @@ public class MenuActivity extends AppCompatActivity  implements View.OnClickList
 
         mAuth = FirebaseAuth.getInstance();
 
-
         inputs();
     }
 
     private void inputs() {
+
         carHerramientas=(CardView) findViewById(R.id.carHerramientas);
         cardPerfil=(CardView) findViewById(R.id.cardPerfil);
         cardHorario=(CardView) findViewById(R.id.cardHorario);
+        cardcitas=(CardView) findViewById(R.id.cardcitas);
+        cardresultado=(CardView) findViewById(R.id.cardresultado);
 
         btnsalir=(Button)findViewById(R.id.btnsalir);
         btnsalir.setOnClickListener(this);
@@ -59,8 +61,10 @@ public class MenuActivity extends AppCompatActivity  implements View.OnClickList
         cardPerfil.setOnClickListener(this);
         carHerramientas.setOnClickListener(this);
         cardHorario.setOnClickListener(this);
+        cardcitas.setOnClickListener(this);
+        cardresultado.setOnClickListener(this);
 
-        //carHerramientas.setOnClickListener(this);
+        //carHerramientas.setOnClickListener(this);cardresultado
     }
 
     @Override
@@ -77,6 +81,12 @@ public class MenuActivity extends AppCompatActivity  implements View.OnClickList
 
                 startActivity(new Intent(this, HorarioActivity.class));
                 break;
+            case R.id.cardcitas:
+                startActivity(new Intent(this, CitasActivity.class));
+                break;
+            case R.id.cardresultado:
+                startActivity(new Intent(this, ResultadoActivity.class));
+                break;
             case R.id.btnsalir:
 
               Salir();
@@ -89,29 +99,4 @@ public class MenuActivity extends AppCompatActivity  implements View.OnClickList
         startActivity(new Intent(this,LoginActivity.class));
     }
 
-    
-    private  void  kmar(){
-        databaseReference = FirebaseDatabase.getInstance().getReference().child("Categoria");
-        String key =databaseReference.push().getKey();
-        Map<String,Object> categoria= new HashMap<>();
-        categoria.put("nombre","Lectura ");
-        categoria.put("photo","default");
-        categoria.put("tipo","tipo");
-        categoria.put("id",key);
-
-        databaseReference.child(key).setValue(categoria).addOnCompleteListener(new OnCompleteListener<Void>() {
-            @Override
-            public void onComplete(@NonNull @NotNull Task<Void> task) {
-                if (task.isSuccessful()){
-                    Toast.makeText(MenuActivity.this, "create success", Toast.LENGTH_SHORT).show();
-                }
-            }
-        }).addOnFailureListener(new OnFailureListener() {
-            @Override
-            public void onFailure(@NonNull @NotNull Exception e) {
-                Toast.makeText(MenuActivity.this, "err "+e.getMessage(), Toast.LENGTH_SHORT).show();
-               
-            }
-        });
-    }
 }

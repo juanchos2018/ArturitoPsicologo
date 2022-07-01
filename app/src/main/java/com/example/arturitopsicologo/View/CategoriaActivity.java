@@ -6,6 +6,7 @@ import androidx.cardview.widget.CardView;
 import android.content.Intent;
 import android.os.Bundle;
 import android.view.View;
+import android.widget.ImageView;
 
 import com.example.arturitopsicologo.R;
 
@@ -13,6 +14,8 @@ public class CategoriaActivity extends AppCompatActivity implements View.OnClick
 
 
     CardView cardlectura,carAtencion,cardmemoria;
+    ImageView imgfinish;
+
     @Override
     protected void onCreate(Bundle savedInstanceState) {
         super.onCreate(savedInstanceState);
@@ -22,11 +25,18 @@ public class CategoriaActivity extends AppCompatActivity implements View.OnClick
         cardlectura=(CardView) findViewById(R.id.cardlectura);
         carAtencion=(CardView) findViewById(R.id.carAtencion);
         cardmemoria=(CardView) findViewById(R.id.cardmemoria);
+
+        imgfinish=(ImageView) findViewById(R.id.imgfinish);
+
         cardlectura.setOnClickListener(this);
         carAtencion.setOnClickListener(this);
         cardmemoria.setOnClickListener(this);
-    }
+        imgfinish.setOnClickListener(this);
 
+    }
+    private  void  finishs(){
+        finish();
+    }
     @Override
     public void onClick(View view) {
 
@@ -39,6 +49,9 @@ public class CategoriaActivity extends AppCompatActivity implements View.OnClick
                 break;
             case R.id.cardmemoria:
                 startActivity(new Intent(this,MemoriaActivity.class));
+                break;
+            case R.id.imgfinish:
+                finishs();
                 break;
 
 

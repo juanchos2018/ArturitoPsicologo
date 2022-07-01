@@ -5,7 +5,6 @@
     xmlns:tools="http://schemas.android.com/tools"
     android:layout_width="match_parent"
     android:orientation="vertical"
-
     android:background="@drawable/bg_color"
     android:layout_height="match_parent"
     tools:context=".MenuActivity">
@@ -14,7 +13,6 @@
     <ScrollView
         android:layout_width="match_parent"
         android:layout_height="match_parent">
-
 
     <LinearLayout
         android:layout_width="match_parent"
@@ -32,6 +30,7 @@
         android:layout_height="wrap_content">
 
         <androidx.cardview.widget.CardView
+            android:id="@+id/cardcitas"
             app:cardCornerRadius="20dp"
             android:layout_width="0dp"
             android:layout_weight="1"
@@ -69,6 +68,7 @@
         </androidx.cardview.widget.CardView>
 
         <androidx.cardview.widget.CardView
+            android:id="@+id/cardresultado"
             app:cardCornerRadius="20dp"
             android:layout_width="0dp"
             android:layout_weight="1"
@@ -278,16 +278,10 @@
         android:layout_marginLeft="20dp"
         android:layout_gravity="left"
         android:text="salir"
-        android:layout_width="wrap_content"
+        android:layout_width="match_parent"
         android:layout_height="wrap_content">
     </Button>
-    <Button
-        android:layout_gravity="right"
-        android:id="@+id/btnperfil"
-        android:text="perfil"
-        android:layout_width="wrap_content"
-        android:layout_height="wrap_content">
-    </Button>
+
     </LinearLayout>
     </ScrollView>
 </LinearLayout>

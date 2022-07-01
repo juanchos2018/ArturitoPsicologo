@@ -107,12 +107,10 @@ public class EditFragment extends Fragment implements View.OnClickListener {
         btnupdate=(Button) view.findViewById(R.id.btnupdate);
         btnfoto=(Button) view.findViewById(R.id.btnfoto);
 
-
         btnupdate.setOnClickListener(this);
         btnfoto.setOnClickListener(this);
 
     }
-
 
     @Override
     public void onStart() {
@@ -120,7 +118,6 @@ public class EditFragment extends Fragment implements View.OnClickListener {
         infoPsicologo();
     }
     private void infoPsicologo() {
-
         presenter.info(new InterfacePsicologo() {
             @Override
             public void onCallback(Psicologo value) {
@@ -128,7 +125,8 @@ public class EditFragment extends Fragment implements View.OnClickListener {
                 etapellidos.setText(value.getApellido());
                 etphone.setText(value.getPhone());
                 etformacion.setText(value.getFormacion());
-
+                etphone.setText(value.getPhone());
+                etdescripcion.setText(value.getDescripcion());
                 if (value.getPhoto().equals("default")){
                     imgperfil.setImageResource(R.drawable.default_profile_image);
                 }else{
@@ -185,9 +183,9 @@ public class EditFragment extends Fragment implements View.OnClickListener {
             psico.setId(user_id);
             psico.setNombres(nombres);
             psico.setApellido(apellidos);
-            psico.setPhoto(phone);
             psico.setDescripcion(descripcion);
             psico.setFormacion(formacion);
+            psico.setPhone(phone);
             presenter.update(psico);
         }
     }
@@ -198,7 +196,6 @@ public class EditFragment extends Fragment implements View.OnClickListener {
         super.onActivityResult(requestCode, resultCode, data);
 
         if (requestCode==PICK_PHOTO && resultCode==getActivity().RESULT_OK && data!=null && data.getData()!=null){
-
             Uri uri =data.getData();
             try {
                 Bitmap bitmap = MediaStore.Images.Media.getBitmap(getActivity().getContentResolver(),uri);

@@ -10,16 +10,28 @@
         android:supportsRtl="true"
         android:theme="@style/Theme.ArturitoPsicologo">
         <activity
+            android:name=".View.CategoriaPacienteActivity"
+            android:parentActivityName=".View.ResultadoActivity"
+            android:exported="false" />
+        <activity
+            android:name=".View.ResultadoActivity"
+            android:theme="@style/Theme.AppCompat.Light.NoActionBar"
+            android:exported="false" />
+        <activity
             android:name=".View.MemoriaActivity"
+            android:theme="@style/Theme.AppCompat.Light.NoActionBar"
             android:exported="false" />
         <activity
             android:name=".View.AtencionActivity"
+            android:theme="@style/Theme.AppCompat.Light.NoActionBar"
             android:exported="false" />
         <activity
             android:name=".View.PacienteActivity"
+            android:theme="@style/Theme.AppCompat.Light.NoActionBar"
             android:exported="false" />
         <activity
             android:name=".View.HorasActivity"
+            android:theme="@style/Theme.AppCompat.Light.NoActionBar"
             android:exported="false" />
         <activity
             android:name=".SplashActivity"
@@ -32,6 +44,7 @@
         </activity>
         <activity
             android:name=".View.HorarioActivity"
+            android:theme="@style/Theme.AppCompat.Light.NoActionBar"
             android:exported="false" />
         <activity
             android:name=".View.PerfilActivity"
@@ -47,12 +60,15 @@
             android:exported="false" />
         <activity
             android:name=".View.LecturaActivity"
+            android:theme="@style/Theme.AppCompat.Light.NoActionBar"
             android:exported="false" />
         <activity
             android:name=".View.LecturasActivity"
+            android:theme="@style/Theme.AppCompat.Light.NoActionBar"
             android:exported="false" />
         <activity
             android:name=".View.CategoriaActivity"
+
             android:exported="false" />
         <activity
             android:name=".View.HerramientasActivity"

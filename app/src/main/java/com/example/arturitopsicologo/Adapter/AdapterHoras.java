@@ -12,6 +12,7 @@ import android.widget.TextView;
 import androidx.annotation.NonNull;
 import androidx.recyclerview.widget.RecyclerView;
 
+import com.example.arturitopsicologo.Interface.InterfaceClick;
 import com.example.arturitopsicologo.Interface.InterfaceId;
 import com.example.arturitopsicologo.Model.Fecha;
 import com.example.arturitopsicologo.Model.Horario;
@@ -24,13 +25,12 @@ public class AdapterHoras extends RecyclerView.Adapter<AdapterHoras.ViewHolderDa
 
 
     ArrayList<Horario> listaItems;
-
-
     Context context;
-
-    public AdapterHoras(ArrayList<Horario> listaItems, Context context) {
+    private InterfaceClick interfaceClick;
+    public AdapterHoras(ArrayList<Horario> listaItems, Context context, InterfaceClick interfaceClick) {
         this.context=context;
         this.listaItems = listaItems;
+        this.interfaceClick=interfaceClick;
     }
 
     private View.OnClickListener listener;
@@ -60,6 +60,13 @@ public class AdapterHoras extends RecyclerView.Adapter<AdapterHoras.ViewHolderDa
         if (holder instanceof ViewHolderDatos){
             final ViewHolderDatos datgolder =(ViewHolderDatos)holder;
             datgolder.tvhoras.setText(listaItems.get(position).getHora_inicio()+"-"+listaItems.get(position).getHora_fin());
+            datgolder.id=listaItems.get(position).getId();
+            datgolder.btneditarhoras.setOnClickListener(new View.OnClickListener() {
+                @Override
+                public void onClick(View view) {
+                    interfaceClick.onCallback(datgolder.id);
+                }
+            });
         }
     }
 
@@ -70,12 +77,12 @@ public class AdapterHoras extends RecyclerView.Adapter<AdapterHoras.ViewHolderDa
 
     public class ViewHolderDatos extends RecyclerView.ViewHolder {
         TextView tvhoras;
-        Button btneditarfecha,btnhoras;
+        Button btneditarhoras,btnhoras;
         String id;
         public ViewHolderDatos(@NonNull View itemView) {
             super(itemView);
             tvhoras=(TextView) itemView.findViewById(R.id.tvhoras);
-
+            btneditarhoras=(Button) itemView.findViewById(R.id.btneditarhoras);
         }
     }
 }

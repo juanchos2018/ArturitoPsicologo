@@ -17,6 +17,14 @@ public class Lectura implements Serializable {
     String  respuesta3;
     String  estado;
 
+    String  status;
+    String  puntores1;
+    String  puntores2;
+    String  puntores3;
+
+    String  corregido;
+
+
 
     public  Lectura(){
 
@@ -111,5 +119,48 @@ public class Lectura implements Serializable {
 
     public void setEstado(String estado) {
         this.estado = estado;
+    }
+
+    public String getStatus() {
+        return status;
+    }
+
+    public void setStatus(String status) {
+        this.status = status;
+    }
+
+
+
+    public String getPuntores1() {
+        return puntores1;
+    }
+
+    public void setPuntores1(String puntores1) {
+        this.puntores1 = puntores1;
+    }
+
+    public String getPuntores2() {
+        return puntores2;
+    }
+
+    public void setPuntores2(String puntores2) {
+        this.puntores2 = puntores2;
+    }
+
+    public String getPuntores3() {
+        return puntores3;
+    }
+
+    public void setPuntores3(String puntores3) {
+        this.puntores3 = puntores3;
+    }
+
+
+    public String getCorregido() {
+        return corregido;
+    }
+
+    public void setCorregido(String corregido) {
+        this.corregido = corregido;
     }
 }

@@ -10,6 +10,7 @@ import android.text.TextUtils;
 import android.view.View;
 import android.widget.Button;
 import android.widget.EditText;
+import android.widget.ImageView;
 import android.widget.LinearLayout;
 import android.widget.RadioButton;
 import android.widget.Toast;
@@ -18,6 +19,7 @@ import com.example.arturitopsicologo.Interface.InterfaceLectura;
 import com.example.arturitopsicologo.Model.Lectura;
 import com.example.arturitopsicologo.Presenter.PresenterLectura;
 import com.example.arturitopsicologo.R;
+import com.google.firebase.auth.FirebaseAuth;
 import com.google.firebase.database.DatabaseReference;
 import com.google.firebase.database.FirebaseDatabase;
 
@@ -33,6 +35,9 @@ public class LecturaActivity extends AppCompatActivity implements View.OnClickLi
     private DatabaseReference reference;
     String CategoriaId= "-N3iTyAojHIFohK3ft4U";
     String id;
+    private FirebaseAuth mAuth;
+    String user_id;
+    ImageView imgfinish;
 
     Lectura lecturaObjec;
     @RequiresApi(api = Build.VERSION_CODES.M)
@@ -43,14 +48,18 @@ public class LecturaActivity extends AppCompatActivity implements View.OnClickLi
 
         layoutlectura=(LinearLayout)findViewById(R.id.layoutlectura);
         layoutcuestionario=(LinearLayout)findViewById(R.id.layoutcuestionario);
-
+        mAuth = FirebaseAuth.getInstance();
+        user_id = mAuth.getCurrentUser().getUid();
         reference= FirebaseDatabase.getInstance().getReference();
-        presenter= new PresenterLectura(this,reference);
+        presenter= new PresenterLectura(this,reference,user_id,CategoriaId);
 
         search=(RadioButton)findViewById(R.id.search);
         offer=(RadioButton)findViewById(R.id.offer);
         search.setChecked(true);
        // lectura = new Lectura();
+
+        imgfinish=(ImageView) findViewById(R.id.imgfinish);
+        imgfinish.setOnClickListener(this);
 
         search.setOnClickListener(this);
         offer.setOnClickListener(this);
@@ -64,7 +73,7 @@ public class LecturaActivity extends AppCompatActivity implements View.OnClickLi
     @Override
     protected void onStart() {
         super.onStart();
-        if (id!=""){
+        if (!TextUtils.isEmpty(id)){
             viewLectura(id);
             btnpublicar.setVisibility(View.VISIBLE);
         }
@@ -78,8 +87,6 @@ public class LecturaActivity extends AppCompatActivity implements View.OnClickLi
             etpregunta2.setText(value.getPregunta2());
             etpregunta3.setText(value.getPregunta3());
             lecturaObjec=value;
-            Toast.makeText(this, lecturaObjec.getPregunta1(), Toast.LENGTH_SHORT).show();
-
         }, CategoriaId,id);
     }
 
@@ -96,6 +103,9 @@ public class LecturaActivity extends AppCompatActivity implements View.OnClickLi
         btnguardar.setOnClickListener(this);
         btnpublicar.setOnClickListener(this);
 
+    }
+    private  void  finishs(){
+        finish();
     }
 
     @Override
@@ -133,6 +143,9 @@ public class LecturaActivity extends AppCompatActivity implements View.OnClickLi
                 intent.putExtras(bundle);
                 startActivity(intent);
                 break;
+            case R.id.imgfinish:
+                finishs();
+                break;
         }
 
     }
@@ -166,6 +179,12 @@ public class LecturaActivity extends AppCompatActivity implements View.OnClickLi
             obj.setRespuesta2("");
             obj.setRespuesta3("");
             obj.setEstado("nuevo");
+            obj.setStatus("activo");
+            obj.setPuntores1("0");
+            obj.setPuntores2("0");
+            obj.setPuntores3("0");
+            obj.setCorregido("no");
+
             presenter.store(obj);
         }
     }

@@ -7,10 +7,12 @@ import androidx.recyclerview.widget.RecyclerView;
 import android.content.Intent;
 import android.os.Bundle;
 import android.view.View;
+import android.widget.ImageView;
 
 import com.example.arturitopsicologo.Presenter.PresenterLectura;
 import com.example.arturitopsicologo.R;
 import com.google.android.material.floatingactionbutton.FloatingActionButton;
+import com.google.firebase.auth.FirebaseAuth;
 import com.google.firebase.database.DatabaseReference;
 import com.google.firebase.database.FirebaseDatabase;
 
@@ -22,19 +24,24 @@ public class LecturasActivity extends AppCompatActivity implements View.OnClickL
 
     String CategoriaId= "-N3iTyAojHIFohK3ft4U";
 
+    private FirebaseAuth mAuth;
+    ImageView imgfinish;
 
+    String user_id;
     @Override
     protected void onCreate(Bundle savedInstanceState) {
         super.onCreate(savedInstanceState);
         setContentView(R.layout.activity_lecturas);
 
+        mAuth = FirebaseAuth.getInstance();
+        user_id = mAuth.getCurrentUser().getUid();
         reference= FirebaseDatabase.getInstance().getReference();
-        presenter= new PresenterLectura(this,reference);
+        presenter= new PresenterLectura(this,reference,user_id,CategoriaId);
 
+        imgfinish=(ImageView) findViewById(R.id.imgfinish);
+        imgfinish.setOnClickListener(this);
         FloatingActionButton btnaddlectura = (FloatingActionButton)findViewById(R.id.btnaddlectura);
         btnaddlectura.setOnClickListener(this);
-
-
 
     }
 
@@ -48,7 +55,14 @@ public class LecturasActivity extends AppCompatActivity implements View.OnClickL
                 intent.putExtras(bundle);
                 startActivity(intent);
                 break;
+            case R.id.imgfinish:
+                finishs();
+                break;
         }
+    }
+
+    private  void  finishs(){
+        finish();
     }
 
     @Override
@@ -56,7 +70,6 @@ public class LecturasActivity extends AppCompatActivity implements View.OnClickL
         super.onStart();
         records();
     }
-
 
     private  void  records(){
         RecyclerView recyclerView=(RecyclerView)findViewById(R.id.recylerlecturas);
