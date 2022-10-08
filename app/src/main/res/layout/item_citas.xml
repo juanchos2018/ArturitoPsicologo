@@ -42,7 +42,6 @@
             <TextView
                 android:id="@+id/nombrepaciente"
                 android:text="Psicologo Nina Maria "
-
                 android:layout_width="wrap_content"
                 android:layout_height="wrap_content">
             </TextView>
@@ -55,8 +54,17 @@
                 android:layout_height="wrap_content">
             </TextView>
 
-
+            <ImageView
+                android:id="@+id/imgestado"
+                android:layout_gravity="right"
+                android:src="@drawable/ic_check"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content">
+            </ImageView>
 
         </LinearLayout>
+
+
+
     </LinearLayout>
 </androidx.cardview.widget.CardView>

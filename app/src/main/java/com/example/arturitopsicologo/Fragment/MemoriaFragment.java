@@ -156,7 +156,7 @@ public class MemoriaFragment extends Fragment  implements InterfaceTaller {
             @Override
             public void onClick(View view) {
                 if (value.getAudio().equals("nulo")){
-                    Toast.makeText(getContext(), "no hay autio", Toast.LENGTH_SHORT).show();
+                    Toast.makeText(getContext(), "no hay audio", Toast.LENGTH_SHORT).show();
                 }
                 else{
                     String audioUrl = value.getAudio();

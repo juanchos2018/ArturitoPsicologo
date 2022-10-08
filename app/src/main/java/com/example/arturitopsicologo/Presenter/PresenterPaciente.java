@@ -19,11 +19,13 @@ import androidx.recyclerview.widget.RecyclerView;
 
 import com.example.arturitopsicologo.Adapter.AdapterLectura;
 import com.example.arturitopsicologo.Adapter.AdapterPacientes;
+import com.example.arturitopsicologo.Adapter.AdapterPacientes2;
 import com.example.arturitopsicologo.Adapter.AdapterPsicologoPaciente;
 import com.example.arturitopsicologo.Interface.InterfaceClick;
 import com.example.arturitopsicologo.Interface.InterfaceLectura;
 import com.example.arturitopsicologo.Interface.InterfacePaciente;
 import com.example.arturitopsicologo.Model.Categoria;
+import com.example.arturitopsicologo.Model.Historial;
 import com.example.arturitopsicologo.Model.Lectura;
 import com.example.arturitopsicologo.Model.Paciente;
 import com.example.arturitopsicologo.Model.PsicoloPaciente;
@@ -46,6 +48,7 @@ public class PresenterPaciente {
     private DatabaseReference databaseReference;
     ProgressDialog progressDialog;
     private AdapterPsicologoPaciente adapter;
+    private AdapterPacientes2 adapter3;
     private AdapterPacientes adapter2;
     android.app.AlertDialog.Builder builder;
     AlertDialog alert;
@@ -90,6 +93,29 @@ public class PresenterPaciente {
             }
         });
     }
+
+
+    public  void cargarRecycler2(RecyclerView recyclerView,String CategoriaId){
+        databaseReference.child("PsicologoPaciente").child(psicologo_id).addValueEventListener(new ValueEventListener() {
+            ArrayList<PsicoloPaciente> lista;
+            @Override
+            public void onDataChange(@NonNull @NotNull DataSnapshot snapshot) {
+                lista=new ArrayList<>();
+                for (DataSnapshot item:snapshot.getChildren()){
+                    PsicoloPaciente model=item.getValue(PsicoloPaciente.class);
+                    lista.add(model);
+                }
+                adapter3= new AdapterPacientes2(lista, mContext);
+                recyclerView.setAdapter(adapter3);
+            }
+            @Override
+            public void onCancelled(@NonNull @NotNull DatabaseError error) {
+
+            }
+        });
+    }
+
+
 
     public  void cargarRecyclerDos(RecyclerView recyclerView,String CategoriaId){
         databaseReference.child("PsicologoPaciente").child(psicologo_id).addValueEventListener(new ValueEventListener() {
@@ -145,6 +171,23 @@ public class PresenterPaciente {
             public void onFailure(@NonNull @NotNull Exception e) {
                 Toast.makeText(mContext, "err "+e.getMessage(), Toast.LENGTH_SHORT).show();
                 progressDialog.dismiss();
+            }
+        });
+    }
+
+    public   void saveHistorial( Historial historial){
+        String key =databaseReference.push().getKey();
+        databaseReference.child("Historial").child(historial.getPaciente_id()).child(key).setValue(historial).addOnCompleteListener(new OnCompleteListener<Void>() {
+            @Override
+            public void onComplete(@NonNull @NotNull Task<Void> task) {
+                if (task.isSuccessful()){
+                    Toast.makeText(mContext, "Registrado1", Toast.LENGTH_SHORT).show();
+                }
+            }
+        }).addOnFailureListener(new OnFailureListener() {
+            @Override
+            public void onFailure(@NonNull @NotNull Exception e) {
+                Toast.makeText(mContext, "err "+e.getMessage(), Toast.LENGTH_SHORT).show();
             }
         });
     }

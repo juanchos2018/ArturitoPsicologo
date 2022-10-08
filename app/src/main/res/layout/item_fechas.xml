@@ -54,6 +54,12 @@
                 android:orientation="vertical"
                 android:layout_width="0dp"
                 android:layout_height="wrap_content">
+<!--                <ImageView-->
+<!--                    android:layout_gravity="right"-->
+<!--                    android:src="@drawable/ic_edit"-->
+<!--                    android:layout_width="40dp"-->
+<!--                    android:layout_height="40dp">-->
+<!--                </ImageView>    -->
                 <Button
                     android:id="@+id/btnhoras"
                     android:textSize="12sp"

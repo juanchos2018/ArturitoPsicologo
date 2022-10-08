@@ -7,6 +7,7 @@ import android.view.LayoutInflater;
 import android.view.View;
 import android.view.ViewGroup;
 import android.widget.Button;
+import android.widget.ImageView;
 import android.widget.TextView;
 
 import androidx.annotation.NonNull;
@@ -18,6 +19,7 @@ import com.example.arturitopsicologo.Model.Lectura;
 import com.example.arturitopsicologo.Model.PsicoloPaciente;
 import com.example.arturitopsicologo.R;
 import com.example.arturitopsicologo.View.LecturaActivity;
+import com.squareup.picasso.Picasso;
 
 import java.util.ArrayList;
 
@@ -67,6 +69,11 @@ public class AdapterPsicologoPaciente  extends RecyclerView.Adapter<AdapterPsico
             datgolder.tvnombrePa.setText(listaItems.get(position).getNombres());
             datgolder.id=listaItems.get(position).getId();
             datgolder.paciente_id=listaItems.get(position).getPaciente_id();
+            if (listaItems.get(position).getPhoto().equals("default")){
+                datgolder. imgfoto.setImageResource(R.drawable.default_profile_image);
+            }else{
+                Picasso.get().load(listaItems.get(position).getPhoto()).fit().centerCrop().into(datgolder. imgfoto);
+            }
             datgolder.btnenviar.setOnClickListener(new View.OnClickListener() {
                 @Override
                 public void onClick(View view) {
@@ -86,10 +93,12 @@ public class AdapterPsicologoPaciente  extends RecyclerView.Adapter<AdapterPsico
         Button btnenviar;
         String id;
         String paciente_id;
+        ImageView imgfoto;
         public ViewHolderDatos(@NonNull View itemView) {
             super(itemView);
             tvnombrePa=(TextView) itemView.findViewById(R.id.tvnombrePa);
             btnenviar=(Button) itemView.findViewById(R.id.btnenviar);
+            imgfoto=(ImageView) itemView.findViewById(R.id.imgfoto);
         }
     }
 }

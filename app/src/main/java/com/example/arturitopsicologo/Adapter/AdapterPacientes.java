@@ -5,6 +5,7 @@ import android.view.LayoutInflater;
 import android.view.View;
 import android.view.ViewGroup;
 import android.widget.Button;
+import android.widget.ImageView;
 import android.widget.TextView;
 
 import androidx.annotation.NonNull;
@@ -12,6 +13,7 @@ import androidx.recyclerview.widget.RecyclerView;
 
 import com.example.arturitopsicologo.Model.PsicoloPaciente;
 import com.example.arturitopsicologo.R;
+import com.squareup.picasso.Picasso;
 
 import java.util.ArrayList;
 
@@ -54,6 +56,14 @@ public class AdapterPacientes  extends RecyclerView.Adapter<AdapterPacientes.Vie
         if (holder instanceof ViewHolderDatos){
             final ViewHolderDatos datgolder =(ViewHolderDatos)holder;
             datgolder.tvnombrePa.setText(listaItems.get(position).getNombres());
+
+
+            if (listaItems.get(position).getPhoto().equals("default")){
+                datgolder. imgfoto.setImageResource(R.drawable.default_profile_image);
+            }else{
+                Picasso.get().load(listaItems.get(position).getPhoto()).fit().centerCrop().into(datgolder. imgfoto);
+            }
+
         }
     }
 
@@ -68,11 +78,13 @@ public class AdapterPacientes  extends RecyclerView.Adapter<AdapterPacientes.Vie
         Button btnenviar;
         String id;
         String paciente_id;
+        ImageView imgfoto;
 
 
         public ViewHolderDatos(@NonNull View itemView) {
             super(itemView);
             tvnombrePa=(TextView) itemView.findViewById(R.id.tvnombre);
+            imgfoto=(ImageView) itemView.findViewById(R.id.imgfoto);
 
         }
     }

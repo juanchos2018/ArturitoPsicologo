@@ -39,7 +39,7 @@
                 android:layout_weight="1.5"
                 android:layout_marginLeft="10dp"
                 android:layout_height="wrap_content"
-                android:text="Figura"
+                android:text="Atencion"
                 android:textColor="@color/white"
                 android:textSize="20sp">
             </TextView>
@@ -70,7 +70,7 @@
             android:textSize="19sp"
             android:textStyle="bold"
             android:textColor="@color/red"
-            android:text="Seleccione Figura"
+            android:text="SELECCIONE FIGURA"
             android:layout_width="wrap_content"
             android:layout_height="wrap_content">
 
@@ -133,7 +133,7 @@
         android:layout_marginTop="10dp"
         android:layout_gravity="right"
         android:id="@+id/btnsiguiente"
-        android:text="Soguiente"
+        android:text="Siguiente"
         android:layout_width="wrap_content"
         android:layout_height="wrap_content">
 

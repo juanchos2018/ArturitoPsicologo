@@ -13,6 +13,7 @@ import android.widget.Toast;
 import com.example.arturitopsicologo.View.CategoriaActivity;
 import com.example.arturitopsicologo.View.CitasActivity;
 import com.example.arturitopsicologo.View.HerramientasActivity;
+import com.example.arturitopsicologo.View.HistorialActivity;
 import com.example.arturitopsicologo.View.HorarioActivity;
 import com.example.arturitopsicologo.View.PerfilActivity;
 import com.example.arturitopsicologo.View.ResultadoActivity;
@@ -30,7 +31,7 @@ import java.util.Map;
 
 public class MenuActivity extends AppCompatActivity  implements View.OnClickListener {
 
-    CardView carHerramientas,cardPerfil,cardHorario,cardcitas,cardresultado;
+    CardView carHerramientas,cardPerfil,cardHorario,cardcitas,cardresultado,cardHistorial;
     private DatabaseReference databaseReference;
     Button btnperfil,btnsalir;
     private FirebaseAuth mAuth;
@@ -53,6 +54,7 @@ public class MenuActivity extends AppCompatActivity  implements View.OnClickList
         cardHorario=(CardView) findViewById(R.id.cardHorario);
         cardcitas=(CardView) findViewById(R.id.cardcitas);
         cardresultado=(CardView) findViewById(R.id.cardresultado);
+        cardHistorial=(CardView) findViewById(R.id.cardHistorial);
 
         btnsalir=(Button)findViewById(R.id.btnsalir);
         btnsalir.setOnClickListener(this);
@@ -63,6 +65,7 @@ public class MenuActivity extends AppCompatActivity  implements View.OnClickList
         cardHorario.setOnClickListener(this);
         cardcitas.setOnClickListener(this);
         cardresultado.setOnClickListener(this);
+        cardHistorial.setOnClickListener(this);
 
         //carHerramientas.setOnClickListener(this);cardresultado
     }
@@ -90,6 +93,10 @@ public class MenuActivity extends AppCompatActivity  implements View.OnClickList
             case R.id.btnsalir:
 
               Salir();
+                break;
+
+            case R.id.cardHistorial:
+                startActivity(new Intent(this, HistorialActivity.class));
                 break;
         }
     }

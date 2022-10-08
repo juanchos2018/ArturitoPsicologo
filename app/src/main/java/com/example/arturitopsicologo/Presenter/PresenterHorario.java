@@ -124,7 +124,7 @@ public class PresenterHorario {
 
         Map<String,Object> obj= new HashMap<>();
         obj.put("hora_inicio",fecha.getHora_inicio());
-        obj.put("hora_inicio",fecha.getHora_inicio());
+        obj.put("hora_fin",fecha.getHora_fin());
 
         databaseReference.child("Fechas").child(user_id).child(fecha_id).child("Horas").child(fecha.getId()).updateChildren(obj).addOnCompleteListener(new OnCompleteListener<Void>() {
             @Override

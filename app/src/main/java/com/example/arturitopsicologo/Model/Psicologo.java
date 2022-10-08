@@ -13,10 +13,12 @@ public class Psicologo {
     String correo;
     String type;
     String phone;
+    String estrellas;
 
     public  Psicologo(){
 
     }
+
     public String getId() {
         return id;
     }
@@ -95,5 +97,14 @@ public class Psicologo {
 
     public void setPhone(String phone) {
         this.phone = phone;
+    }
+
+
+    public String getEstrellas() {
+        return estrellas;
+    }
+
+    public void setEstrellas(String estrellas) {
+        this.estrellas = estrellas;
     }
 }
