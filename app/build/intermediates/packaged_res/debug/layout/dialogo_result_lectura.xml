@@ -1,0 +1,153 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout
+    xmlns:android="http://schemas.android.com/apk/res/android"
+    android:orientation="vertical"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    xmlns:app="http://schemas.android.com/apk/res-auto">
+
+    <androidx.cardview.widget.CardView
+        app:cardCornerRadius="15dp"
+        android:layout_marginRight="20sp"
+        android:layout_marginLeft="20dp"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content">
+
+        <LinearLayout
+            android:orientation="vertical"
+            android:padding="10dp"
+            android:layout_width="match_parent"
+            android:layout_height="match_parent">
+            <TextView
+                android:layout_gravity="center"
+                android:layout_marginTop="10dp"
+                android:layout_marginBottom="10dp"
+                android:textStyle="bold"
+                android:text="Lectura"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content">
+
+            </TextView>
+            <TextView
+
+                android:id="@+id/etLectura"
+                android:gravity="top"
+                android:inputType="text|textMultiLine"
+                android:layout_width="match_parent"
+                android:layout_height="130dp">
+            </TextView>
+
+            <TextView
+                android:textStyle="bold"
+                android:id="@+id/pregunta1"
+                android:hint="pregunta 1"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content">
+            </TextView>
+
+            <LinearLayout
+                android:gravity="center"
+                android:weightSum="3"
+                android:orientation="horizontal"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content">
+
+                <TextView
+                    android:hint="escriba respuesta"
+                    android:id="@+id/tvrespuesta1"
+                    android:layout_marginBottom="4dp"
+                    android:layout_weight="2.5"
+                    android:layout_width="0dp"
+                    android:layout_height="wrap_content">
+                </TextView>
+                <CheckBox
+                    android:id="@+id/che1"
+                    android:layout_gravity="right"
+                    android:layout_weight="0.5"
+                    android:layout_width="0dp"
+                    android:layout_height="wrap_content">
+                </CheckBox>
+
+            </LinearLayout>
+            <TextView
+                android:textStyle="bold"
+                android:id="@+id/pregunta2"
+                android:hint="pregunta 2"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content">
+            </TextView>
+
+        <LinearLayout
+            android:weightSum="3"
+            android:gravity="center"
+            android:orientation="horizontal"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content">
+            <TextView
+                android:hint="escriba respuesta"
+                android:id="@+id/tvrespuesta2"
+                android:layout_weight="2.5"
+                android:layout_width="0dp"
+                android:layout_marginBottom="4dp"
+                android:layout_height="wrap_content">
+            </TextView>
+            <CheckBox
+                android:id="@+id/che2"
+                android:layout_gravity="right"
+                android:layout_weight="0.5"
+                android:layout_width="0dp"
+                android:layout_height="wrap_content">
+            </CheckBox>
+
+        </LinearLayout>
+
+
+            <TextView
+                android:textStyle="bold"
+                android:id="@+id/pregunta3"
+                android:hint="pregunta 3"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content">
+            </TextView>
+
+        <LinearLayout
+            android:weightSum="3"
+            android:gravity="center"
+            android:orientation="horizontal"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content">
+
+            <TextView
+                android:hint="escriba respuesta"
+                android:id="@+id/tvrespuesta3"
+                android:layout_marginBottom="4dp"
+                android:layout_weight="2.5"
+                android:layout_width="0dp"
+                android:layout_height="wrap_content">
+
+            </TextView>
+            <CheckBox
+                android:id="@+id/che3"
+                android:layout_gravity="right"
+                android:layout_weight="0.5"
+                android:layout_width="0dp"
+                android:layout_height="wrap_content">
+            </CheckBox>
+        </LinearLayout>
+
+            <Button
+                android:id="@+id/btnguardar"
+                android:layout_marginTop="5dp"
+                android:textColor="@color/white"
+                android:background="@drawable/borde_uno"
+                android:text="Calificar"
+                android:textStyle="bold"
+                android:layout_gravity="center"
+                android:layout_width="150dp"
+                android:layout_marginBottom="30dp"
+                android:layout_height="40dp">
+            </Button>
+
+        </LinearLayout>
+    </androidx.cardview.widget.CardView>
+</RelativeLayout>

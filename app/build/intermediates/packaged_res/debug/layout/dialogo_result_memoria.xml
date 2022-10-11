@@ -1,0 +1,111 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout
+    xmlns:android="http://schemas.android.com/apk/res/android"
+    android:orientation="vertical"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    xmlns:app="http://schemas.android.com/apk/res-auto">
+
+    <androidx.cardview.widget.CardView
+        app:cardCornerRadius="15dp"
+        android:layout_marginRight="20sp"
+        android:layout_marginLeft="20dp"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content">
+
+        <LinearLayout
+            android:orientation="vertical"
+            android:padding="10dp"
+            android:layout_width="match_parent"
+            android:layout_height="match_parent">
+            <TextView
+                android:layout_gravity="center"
+                android:layout_marginTop="10dp"
+                android:layout_marginBottom="10dp"
+                android:textStyle="bold"
+                android:text="Memoria"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content">
+
+            </TextView>
+
+
+            <TextView
+                android:textStyle="bold"
+                android:text="Figuras"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content">
+            </TextView>
+
+            <LinearLayout
+                android:gravity="center"
+                android:weightSum="3"
+                android:orientation="horizontal"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content">
+
+                <TextView
+                    android:textStyle="bold"
+                    android:text="Perro,Gato,Casa"
+                    android:layout_marginTop="5dp"
+                    android:id="@+id/tvcantidad"
+                    android:layout_marginBottom="4dp"
+                    android:layout_weight="2.5"
+                    android:layout_width="0dp"
+                    android:layout_height="wrap_content">
+                </TextView>
+
+
+            </LinearLayout>
+
+
+
+
+
+
+            <LinearLayout
+                android:weightSum="3"
+                android:layout_marginTop="5dp"
+                android:gravity="center"
+                android:orientation="horizontal"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content">
+
+                <ImageView
+                    android:clickable="true"
+                    android:layout_marginLeft="10dp"
+                    android:id="@+id/imgplay"
+                    android:src="@drawable/ic_paly"
+                    android:layout_width="70dp"
+                    android:onClick="startRecording"
+                    android:layout_height="70dp">
+                </ImageView>
+
+            </LinearLayout>
+
+            <EditText
+                android:id="@+id/etpuntaje"
+                android:layout_marginTop="10dp"
+                android:hint="Ingrese su puntaje"
+                android:inputType="number"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content">
+
+            </EditText>
+
+            <Button
+                android:id="@+id/btnguardar"
+                android:layout_marginTop="15dp"
+                android:textColor="@color/white"
+                android:background="@drawable/borde_uno"
+                android:text="Calificar"
+                android:textStyle="bold"
+                android:layout_gravity="center"
+                android:layout_width="150dp"
+                android:layout_marginBottom="30dp"
+                android:layout_height="40dp">
+            </Button>
+
+        </LinearLayout>
+    </androidx.cardview.widget.CardView>
+</RelativeLayout>

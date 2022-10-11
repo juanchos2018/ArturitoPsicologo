@@ -1,0 +1,2 @@
+10-11 00:16:56.687 31836 31866 I TestRunner: started: useAppContext(com.example.arturitopsicologo.test.ExampleInstrumentedTest)
+10-11 00:16:56.694 31836 31866 I TestRunner: finished: useAppContext(com.example.arturitopsicologo.test.ExampleInstrumentedTest)
