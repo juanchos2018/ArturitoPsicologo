@@ -5,67 +5,87 @@
     xmlns:tools="http://schemas.android.com/tools"
     android:layout_width="match_parent"
     android:orientation="vertical"
-    android:padding="50dp"
+    android:padding="10dp"
     android:layout_height="match_parent"
     android:background="@drawable/bg_color"
-    android:gravity="center"
     tools:context=".View.HerramientasActivity">
 
 
     <androidx.cardview.widget.CardView
-        android:id="@+id/cardCumanin"
-        app:cardCornerRadius="20dp"
+
         android:layout_width="match_parent"
+        android:layout_marginLeft="10dp"
+        android:layout_marginRight="10dp"
+        app:cardCornerRadius="10dp"
+        android:layout_marginBottom="5dp"
+        android:layout_marginTop="2dp"
         android:layout_height="wrap_content">
 
         <LinearLayout
-            android:gravity="center"
-            android:orientation="vertical"
             android:layout_width="match_parent"
-            android:layout_height="wrap_content">
-            <TextView
-                android:layout_marginTop="10dp"
-                android:text="Cumanin"
+            android:layout_height="match_parent"
+            android:padding="10dp"
+            android:orientation="horizontal"
+            android:background="@color/bgAzul">
+
+            <LinearLayout
                 android:layout_width="wrap_content"
-                android:layout_height="wrap_content">
+                android:orientation="vertical"
+                android:gravity="center"
+                android:layout_height="wrap_content"
+                android:layout_marginLeft="5dp">
 
-            </TextView>
-            <ImageView
-                android:src="@drawable/cumanin"
-                android:layout_width="200dp"
-                android:layout_height="150dp">
-            </ImageView>
+                <com.github.siyamed.shapeimageview.CircularImageView
+                    android:layout_gravity="center"
+                    android:layout_width="70dp"
+                    android:layout_height="70dp"
+                    android:src="@drawable/pruebaline"
+                    app:siBorderWidth="2dp"
+                    app:siBorderColor="@color/teal_200"/>
+            </LinearLayout>
+
+            <LinearLayout
+                android:weightSum="3"
+                android:gravity="center"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:orientation="horizontal">
+
+                <TextView
+                    android:text="Cuadrado"
+                    android:id="@+id/tvnombre"
+                    android:layout_width="0dp"
+                    android:layout_weight="2"
+                    android:layout_height="wrap_content"
+                    android:layout_marginLeft="1dp"
+                    android:textSize="16sp"
+                    android:textColor="#ffffff"
+                    android:textStyle="bold">
+                </TextView>
+
+                <LinearLayout
+                    android:layout_weight="1"
+                    android:orientation="vertical"
+                    android:layout_width="0dp"
+                    android:layout_height="wrap_content">
+
+                    <Button
+                        android:id="@+id/btnenviarherramienta"
+                        android:textSize="12sp"
+                        android:layout_gravity="right"
+                        android:layout_width="wrap_content"
+                        android:text="Enviar"
+                        android:layout_marginRight="10dp"
+                        android:layout_height="40dp"
+                        android:textColor="#ffffff">
+                    </Button>
+                </LinearLayout>
+
+            </LinearLayout>
+
         </LinearLayout>
+
     </androidx.cardview.widget.CardView>
-
-    <androidx.cardview.widget.CardView
-        android:id="@+id/cardNeuropsicologia"
-        android:layout_marginTop="20dp"
-        app:cardCornerRadius="20dp"
-        android:layout_width="match_parent"
-        android:layout_height="wrap_content">
-
-        <LinearLayout
-            android:gravity="center"
-            android:orientation="vertical"
-            android:layout_width="match_parent"
-            android:layout_height="wrap_content">
-            <TextView
-                android:layout_marginTop="10dp"
-                android:text="Neuropsicologia"
-                android:layout_width="wrap_content"
-                android:layout_height="wrap_content">
-
-            </TextView>
-            <ImageView
-                android:src="@drawable/neuro"
-                android:layout_width="200dp"
-                android:layout_height="150dp">
-
-            </ImageView>
-        </LinearLayout>
-    </androidx.cardview.widget.CardView>
-
 
 
 

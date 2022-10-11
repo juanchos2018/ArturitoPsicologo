@@ -13,7 +13,7 @@ import com.example.arturitopsicologo.R;
 public class CategoriaActivity extends AppCompatActivity implements View.OnClickListener {
 
 
-    CardView cardlectura,carAtencion,cardmemoria;
+    CardView cardlectura,carAtencion,cardmemoria,cardherramienta;
     ImageView imgfinish;
 
     @Override
@@ -25,12 +25,14 @@ public class CategoriaActivity extends AppCompatActivity implements View.OnClick
         cardlectura=(CardView) findViewById(R.id.cardlectura);
         carAtencion=(CardView) findViewById(R.id.carAtencion);
         cardmemoria=(CardView) findViewById(R.id.cardmemoria);
+        cardherramienta=(CardView) findViewById(R.id.cardherramienta);
 
         imgfinish=(ImageView) findViewById(R.id.imgfinish);
 
         cardlectura.setOnClickListener(this);
         carAtencion.setOnClickListener(this);
         cardmemoria.setOnClickListener(this);
+        cardherramienta.setOnClickListener(this);
         imgfinish.setOnClickListener(this);
 
     }
@@ -49,6 +51,9 @@ public class CategoriaActivity extends AppCompatActivity implements View.OnClick
                 break;
             case R.id.cardmemoria:
                 startActivity(new Intent(this,MemoriaActivity.class));
+                break;
+            case R.id.cardherramienta:
+                startActivity(new Intent(this,HerramientasActivity.class));
                 break;
             case R.id.imgfinish:
                 finishs();
