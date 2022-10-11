@@ -213,6 +213,9 @@ public class HorarioActivity extends AppCompatActivity  implements View.OnClickL
             obj.setFecha1(fecha1);
             obj.setEstado("1");
             presenter.store(obj);
+
+
+
         }
     }
 

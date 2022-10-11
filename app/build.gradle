@@ -13,7 +13,13 @@ android {
         versionCode 1
         versionName "1.0"
         testInstrumentationRunner "androidx.test.runner.AndroidJUnitRunner"
-        //testApplicationId "com.example.arturitopsicologo.test"
+        testApplicationId "com.example.arturitopsicologo.test"
+    }
+
+    testOptions{
+        reportDir="$project.buildDir/results/report"
+        resultsDir="$project.buildDir/results"
+
     }
 
     buildTypes {

@@ -179,6 +179,7 @@ public class EditFragment extends Fragment implements View.OnClickListener {
             etdescripcion.setError("campo necesario");
         }
         else {
+
             Psicologo psico= new Psicologo();
             psico.setId(user_id);
             psico.setNombres(nombres);
