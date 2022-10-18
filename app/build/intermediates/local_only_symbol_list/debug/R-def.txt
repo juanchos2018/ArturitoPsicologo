@@ -91,6 +91,7 @@ drawable perro
 drawable pink_out_line
 drawable pista_one
 drawable pista_thow
+drawable plantilla
 drawable pruebaline
 drawable rectaguloapp
 drawable resultados
@@ -109,6 +110,7 @@ id btn3
 id btnabrirgragment
 id btnaddFecha
 id btnaddHoras
+id btnaddLenguaje
 id btnaddlectura
 id btnanular
 id btncancelar
@@ -136,6 +138,7 @@ id cSwitch
 id cSwitch_textView
 id carAtencion
 id carHerramientas
+id carLenguaje
 id cardHistorial
 id cardHorario
 id cardPerfil
@@ -211,6 +214,7 @@ id recyclerpsicologos
 id recyclerpsicologpaciente
 id recylerFechas
 id recylerHoras
+id recylerLenguajes
 id recylerMemorias
 id recyleratenciones
 id recylerlecturas
@@ -221,7 +225,9 @@ id textView
 id toggle
 id toolbar
 id tvapellido
+id tvapellidopaciente
 id tvapellidos
+id tvapoderado
 id tvcantidad
 id tvcantidadclick
 id tvcantidadfigura
@@ -232,8 +238,10 @@ id tvedad
 id tvfecha
 id tvfigura
 id tvhoras
+id tvinfo
 id tvnombre
 id tvnombrePa
+id tvnombrepaciente
 id tvnombres
 id tvnombretexto
 id tvpunto
@@ -245,6 +253,21 @@ id tvrespuesta3
 id tvtelefono
 id tvtitulo
 id tvtitulo1
+id txtpalabra1
+id txtpalabra10
+id txtpalabra11
+id txtpalabra12
+id txtpalabra13
+id txtpalabra14
+id txtpalabra15
+id txtpalabra2
+id txtpalabra3
+id txtpalabra4
+id txtpalabra5
+id txtpalabra6
+id txtpalabra7
+id txtpalabra8
+id txtpalabra9
 layout activity_atencion
 layout activity_categoria
 layout activity_categoria_paciente
@@ -257,6 +280,8 @@ layout activity_horas
 layout activity_inicio
 layout activity_lectura
 layout activity_lecturas
+layout activity_lenguaje
+layout activity_lenguaje_crear
 layout activity_login
 layout activity_main
 layout activity_memoria
@@ -267,6 +292,7 @@ layout activity_register
 layout activity_resultado
 layout activity_splash
 layout dialogo_atencion
+layout dialogo_detalle
 layout dialogo_historial
 layout dialogo_horas
 layout dialogo_ok
@@ -288,6 +314,7 @@ layout item_historial
 layout item_horarios
 layout item_lectura
 layout item_lecura_dos
+layout item_lenguaje
 layout item_memoria
 layout item_pacientes
 layout item_pacientes2

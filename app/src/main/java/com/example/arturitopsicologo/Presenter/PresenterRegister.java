@@ -63,6 +63,7 @@ public class PresenterRegister {
                             databaseReference.child("formacion").setValue("");
                             databaseReference.child("type").setValue("psicologo");
                             databaseReference.child("phone").setValue("");
+                            databaseReference.child("estrellas").setValue("0");
                             databaseReference.child("correo").setValue(correo);
                             databaseReference.child("id").setValue(current_userID)
                                     .addOnCompleteListener(new OnCompleteListener<Void>() {

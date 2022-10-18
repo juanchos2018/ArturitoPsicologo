@@ -1,9 +1,9 @@
 -- Merging decision tree log ---
 manifest
-ADDED from D:\Trabajo\chino\appPsicoloAritutitoGit\ArturitoPsicologo\app\src\main\AndroidManifest.xml:2:1-92:12
-INJECTED from D:\Trabajo\chino\appPsicoloAritutitoGit\ArturitoPsicologo\app\src\main\AndroidManifest.xml:2:1-92:12
-INJECTED from D:\Trabajo\chino\appPsicoloAritutitoGit\ArturitoPsicologo\app\src\main\AndroidManifest.xml:2:1-92:12
-INJECTED from D:\Trabajo\chino\appPsicoloAritutitoGit\ArturitoPsicologo\app\src\main\AndroidManifest.xml:2:1-92:12
+ADDED from D:\Trabajo\chino\appPsicoloAritutitoGit\ArturitoPsicologo\app\src\main\AndroidManifest.xml:2:1-98:12
+INJECTED from D:\Trabajo\chino\appPsicoloAritutitoGit\ArturitoPsicologo\app\src\main\AndroidManifest.xml:2:1-98:12
+INJECTED from D:\Trabajo\chino\appPsicoloAritutitoGit\ArturitoPsicologo\app\src\main\AndroidManifest.xml:2:1-98:12
+INJECTED from D:\Trabajo\chino\appPsicoloAritutitoGit\ArturitoPsicologo\app\src\main\AndroidManifest.xml:2:1-98:12
 MERGED from [com.google.android.material:material:1.6.1] C:\Users\JUANCHOS\.gradle\caches\transforms-3\02d33fbab7f91f8b349a6a7f86403d5c\transformed\material-1.6.1\AndroidManifest.xml:17:1-26:12
 MERGED from [androidx.constraintlayout:constraintlayout:2.1.4] C:\Users\JUANCHOS\.gradle\caches\transforms-3\fc310e84a66066f9f660cea6d7a556a8\transformed\constraintlayout-2.1.4\AndroidManifest.xml:2:1-11:12
 MERGED from [com.airbnb.android:lottie:3.0.7] C:\Users\JUANCHOS\.gradle\caches\transforms-3\639fcd4ff99827f04bf6111d0cd9a0fa\transformed\lottie-3.0.7\AndroidManifest.xml:2:1-11:12
@@ -64,25 +64,25 @@ MERGED from [androidx.interpolator:interpolator:1.0.0] C:\Users\JUANCHOS\.gradle
 MERGED from [androidx.annotation:annotation-experimental:1.1.0] C:\Users\JUANCHOS\.gradle\caches\transforms-3\1f330d098576dcf6df74e63f82b13f14\transformed\annotation-experimental-1.1.0\AndroidManifest.xml:17:1-24:12
 MERGED from [com.google.firebase:firebase-database-collection:17.0.0] C:\Users\JUANCHOS\.gradle\caches\transforms-3\01227915a371709bfee03cbb0830dd64\transformed\firebase-database-collection-17.0.0\AndroidManifest.xml:2:1-7:12
 MERGED from [com.android.support:exifinterface:27.1.0] C:\Users\JUANCHOS\.gradle\caches\transforms-3\947bda286755e0ff24e8e6d4278d20e5\transformed\exifinterface-27.1.0\AndroidManifest.xml:17:1-22:12
-INJECTED from D:\Trabajo\chino\appPsicoloAritutitoGit\ArturitoPsicologo\app\src\main\AndroidManifest.xml:2:1-92:12
-INJECTED from D:\Trabajo\chino\appPsicoloAritutitoGit\ArturitoPsicologo\app\src\main\AndroidManifest.xml:2:1-92:12
-INJECTED from D:\Trabajo\chino\appPsicoloAritutitoGit\ArturitoPsicologo\app\src\main\AndroidManifest.xml:2:1-92:12
+INJECTED from D:\Trabajo\chino\appPsicoloAritutitoGit\ArturitoPsicologo\app\src\main\AndroidManifest.xml:2:1-98:12
+INJECTED from D:\Trabajo\chino\appPsicoloAritutitoGit\ArturitoPsicologo\app\src\main\AndroidManifest.xml:2:1-98:12
+INJECTED from D:\Trabajo\chino\appPsicoloAritutitoGit\ArturitoPsicologo\app\src\main\AndroidManifest.xml:2:1-98:12
 	package
 		ADDED from D:\Trabajo\chino\appPsicoloAritutitoGit\ArturitoPsicologo\app\src\main\AndroidManifest.xml:3:5-44
 		INJECTED from D:\Trabajo\chino\appPsicoloAritutitoGit\ArturitoPsicologo\app\src\main\AndroidManifest.xml
 		INJECTED from D:\Trabajo\chino\appPsicoloAritutitoGit\ArturitoPsicologo\app\src\main\AndroidManifest.xml
 	android:versionName
 		INJECTED from D:\Trabajo\chino\appPsicoloAritutitoGit\ArturitoPsicologo\app\src\main\AndroidManifest.xml
-		ADDED from D:\Trabajo\chino\appPsicoloAritutitoGit\ArturitoPsicologo\app\src\main\AndroidManifest.xml:2:1-92:12
+		ADDED from D:\Trabajo\chino\appPsicoloAritutitoGit\ArturitoPsicologo\app\src\main\AndroidManifest.xml:2:1-98:12
 		INJECTED from D:\Trabajo\chino\appPsicoloAritutitoGit\ArturitoPsicologo\app\src\main\AndroidManifest.xml
 	android:versionCode
 		INJECTED from D:\Trabajo\chino\appPsicoloAritutitoGit\ArturitoPsicologo\app\src\main\AndroidManifest.xml
-		ADDED from D:\Trabajo\chino\appPsicoloAritutitoGit\ArturitoPsicologo\app\src\main\AndroidManifest.xml:2:1-92:12
+		ADDED from D:\Trabajo\chino\appPsicoloAritutitoGit\ArturitoPsicologo\app\src\main\AndroidManifest.xml:2:1-98:12
 		INJECTED from D:\Trabajo\chino\appPsicoloAritutitoGit\ArturitoPsicologo\app\src\main\AndroidManifest.xml
 	xmlns:android
 		ADDED from D:\Trabajo\chino\appPsicoloAritutitoGit\ArturitoPsicologo\app\src\main\AndroidManifest.xml:2:11-69
 application
-ADDED from D:\Trabajo\chino\appPsicoloAritutitoGit\ArturitoPsicologo\app\src\main\AndroidManifest.xml:5:5-90:19
+ADDED from D:\Trabajo\chino\appPsicoloAritutitoGit\ArturitoPsicologo\app\src\main\AndroidManifest.xml:5:5-96:19
 MERGED from [com.google.android.material:material:1.6.1] C:\Users\JUANCHOS\.gradle\caches\transforms-3\02d33fbab7f91f8b349a6a7f86403d5c\transformed\material-1.6.1\AndroidManifest.xml:24:5-20
 MERGED from [com.google.android.material:material:1.6.1] C:\Users\JUANCHOS\.gradle\caches\transforms-3\02d33fbab7f91f8b349a6a7f86403d5c\transformed\material-1.6.1\AndroidManifest.xml:24:5-20
 MERGED from [androidx.constraintlayout:constraintlayout:2.1.4] C:\Users\JUANCHOS\.gradle\caches\transforms-3\fc310e84a66066f9f660cea6d7a556a8\transformed\constraintlayout-2.1.4\AndroidManifest.xml:9:5-20
@@ -133,160 +133,172 @@ MERGED from [androidx.startup:startup-runtime:1.0.0] C:\Users\JUANCHOS\.gradle\c
 		ADDED from D:\Trabajo\chino\appPsicoloAritutitoGit\ArturitoPsicologo\app\src\main\AndroidManifest.xml:6:9-35
 	android:theme
 		ADDED from D:\Trabajo\chino\appPsicoloAritutitoGit\ArturitoPsicologo\app\src\main\AndroidManifest.xml:11:9-55
-activity#com.example.arturitopsicologo.View.HistorialActivity
+activity#com.example.arturitopsicologo.View.LenguajeCrearActivity
 ADDED from D:\Trabajo\chino\appPsicoloAritutitoGit\ArturitoPsicologo\app\src\main\AndroidManifest.xml:12:9-14:40
 	android:exported
 		ADDED from D:\Trabajo\chino\appPsicoloAritutitoGit\ArturitoPsicologo\app\src\main\AndroidManifest.xml:14:13-37
 	android:name
-		ADDED from D:\Trabajo\chino\appPsicoloAritutitoGit\ArturitoPsicologo\app\src\main\AndroidManifest.xml:13:13-51
-activity#com.example.arturitopsicologo.View.CategoriaPacienteActivity
-ADDED from D:\Trabajo\chino\appPsicoloAritutitoGit\ArturitoPsicologo\app\src\main\AndroidManifest.xml:15:9-18:68
-	android:parentActivityName
-		ADDED from D:\Trabajo\chino\appPsicoloAritutitoGit\ArturitoPsicologo\app\src\main\AndroidManifest.xml:18:13-65
+		ADDED from D:\Trabajo\chino\appPsicoloAritutitoGit\ArturitoPsicologo\app\src\main\AndroidManifest.xml:13:13-55
+activity#com.example.arturitopsicologo.View.LenguajeActivity
+ADDED from D:\Trabajo\chino\appPsicoloAritutitoGit\ArturitoPsicologo\app\src\main\AndroidManifest.xml:15:9-17:40
 	android:exported
 		ADDED from D:\Trabajo\chino\appPsicoloAritutitoGit\ArturitoPsicologo\app\src\main\AndroidManifest.xml:17:13-37
 	android:name
-		ADDED from D:\Trabajo\chino\appPsicoloAritutitoGit\ArturitoPsicologo\app\src\main\AndroidManifest.xml:16:13-59
+		ADDED from D:\Trabajo\chino\appPsicoloAritutitoGit\ArturitoPsicologo\app\src\main\AndroidManifest.xml:16:13-50
+activity#com.example.arturitopsicologo.View.HistorialActivity
+ADDED from D:\Trabajo\chino\appPsicoloAritutitoGit\ArturitoPsicologo\app\src\main\AndroidManifest.xml:18:9-20:40
+	android:exported
+		ADDED from D:\Trabajo\chino\appPsicoloAritutitoGit\ArturitoPsicologo\app\src\main\AndroidManifest.xml:20:13-37
+	android:name
+		ADDED from D:\Trabajo\chino\appPsicoloAritutitoGit\ArturitoPsicologo\app\src\main\AndroidManifest.xml:19:13-51
+activity#com.example.arturitopsicologo.View.CategoriaPacienteActivity
+ADDED from D:\Trabajo\chino\appPsicoloAritutitoGit\ArturitoPsicologo\app\src\main\AndroidManifest.xml:21:9-24:68
+	android:parentActivityName
+		ADDED from D:\Trabajo\chino\appPsicoloAritutitoGit\ArturitoPsicologo\app\src\main\AndroidManifest.xml:24:13-65
+	android:exported
+		ADDED from D:\Trabajo\chino\appPsicoloAritutitoGit\ArturitoPsicologo\app\src\main\AndroidManifest.xml:23:13-37
+	android:name
+		ADDED from D:\Trabajo\chino\appPsicoloAritutitoGit\ArturitoPsicologo\app\src\main\AndroidManifest.xml:22:13-59
 activity#com.example.arturitopsicologo.View.ResultadoActivity
-ADDED from D:\Trabajo\chino\appPsicoloAritutitoGit\ArturitoPsicologo\app\src\main\AndroidManifest.xml:19:9-22:72
+ADDED from D:\Trabajo\chino\appPsicoloAritutitoGit\ArturitoPsicologo\app\src\main\AndroidManifest.xml:25:9-28:72
 	android:exported
-		ADDED from D:\Trabajo\chino\appPsicoloAritutitoGit\ArturitoPsicologo\app\src\main\AndroidManifest.xml:21:13-37
+		ADDED from D:\Trabajo\chino\appPsicoloAritutitoGit\ArturitoPsicologo\app\src\main\AndroidManifest.xml:27:13-37
 	android:theme
-		ADDED from D:\Trabajo\chino\appPsicoloAritutitoGit\ArturitoPsicologo\app\src\main\AndroidManifest.xml:22:13-69
+		ADDED from D:\Trabajo\chino\appPsicoloAritutitoGit\ArturitoPsicologo\app\src\main\AndroidManifest.xml:28:13-69
 	android:name
-		ADDED from D:\Trabajo\chino\appPsicoloAritutitoGit\ArturitoPsicologo\app\src\main\AndroidManifest.xml:20:13-51
+		ADDED from D:\Trabajo\chino\appPsicoloAritutitoGit\ArturitoPsicologo\app\src\main\AndroidManifest.xml:26:13-51
 activity#com.example.arturitopsicologo.View.MemoriaActivity
-ADDED from D:\Trabajo\chino\appPsicoloAritutitoGit\ArturitoPsicologo\app\src\main\AndroidManifest.xml:23:9-26:72
+ADDED from D:\Trabajo\chino\appPsicoloAritutitoGit\ArturitoPsicologo\app\src\main\AndroidManifest.xml:29:9-32:72
 	android:exported
-		ADDED from D:\Trabajo\chino\appPsicoloAritutitoGit\ArturitoPsicologo\app\src\main\AndroidManifest.xml:25:13-37
+		ADDED from D:\Trabajo\chino\appPsicoloAritutitoGit\ArturitoPsicologo\app\src\main\AndroidManifest.xml:31:13-37
 	android:theme
-		ADDED from D:\Trabajo\chino\appPsicoloAritutitoGit\ArturitoPsicologo\app\src\main\AndroidManifest.xml:26:13-69
+		ADDED from D:\Trabajo\chino\appPsicoloAritutitoGit\ArturitoPsicologo\app\src\main\AndroidManifest.xml:32:13-69
 	android:name
-		ADDED from D:\Trabajo\chino\appPsicoloAritutitoGit\ArturitoPsicologo\app\src\main\AndroidManifest.xml:24:13-49
+		ADDED from D:\Trabajo\chino\appPsicoloAritutitoGit\ArturitoPsicologo\app\src\main\AndroidManifest.xml:30:13-49
 activity#com.example.arturitopsicologo.View.AtencionActivity
-ADDED from D:\Trabajo\chino\appPsicoloAritutitoGit\ArturitoPsicologo\app\src\main\AndroidManifest.xml:27:9-30:72
+ADDED from D:\Trabajo\chino\appPsicoloAritutitoGit\ArturitoPsicologo\app\src\main\AndroidManifest.xml:33:9-36:72
 	android:exported
-		ADDED from D:\Trabajo\chino\appPsicoloAritutitoGit\ArturitoPsicologo\app\src\main\AndroidManifest.xml:29:13-37
+		ADDED from D:\Trabajo\chino\appPsicoloAritutitoGit\ArturitoPsicologo\app\src\main\AndroidManifest.xml:35:13-37
 	android:theme
-		ADDED from D:\Trabajo\chino\appPsicoloAritutitoGit\ArturitoPsicologo\app\src\main\AndroidManifest.xml:30:13-69
+		ADDED from D:\Trabajo\chino\appPsicoloAritutitoGit\ArturitoPsicologo\app\src\main\AndroidManifest.xml:36:13-69
 	android:name
-		ADDED from D:\Trabajo\chino\appPsicoloAritutitoGit\ArturitoPsicologo\app\src\main\AndroidManifest.xml:28:13-50
+		ADDED from D:\Trabajo\chino\appPsicoloAritutitoGit\ArturitoPsicologo\app\src\main\AndroidManifest.xml:34:13-50
 activity#com.example.arturitopsicologo.View.PacienteActivity
-ADDED from D:\Trabajo\chino\appPsicoloAritutitoGit\ArturitoPsicologo\app\src\main\AndroidManifest.xml:31:9-34:72
+ADDED from D:\Trabajo\chino\appPsicoloAritutitoGit\ArturitoPsicologo\app\src\main\AndroidManifest.xml:37:9-40:72
 	android:exported
-		ADDED from D:\Trabajo\chino\appPsicoloAritutitoGit\ArturitoPsicologo\app\src\main\AndroidManifest.xml:33:13-37
+		ADDED from D:\Trabajo\chino\appPsicoloAritutitoGit\ArturitoPsicologo\app\src\main\AndroidManifest.xml:39:13-37
 	android:theme
-		ADDED from D:\Trabajo\chino\appPsicoloAritutitoGit\ArturitoPsicologo\app\src\main\AndroidManifest.xml:34:13-69
+		ADDED from D:\Trabajo\chino\appPsicoloAritutitoGit\ArturitoPsicologo\app\src\main\AndroidManifest.xml:40:13-69
 	android:name
-		ADDED from D:\Trabajo\chino\appPsicoloAritutitoGit\ArturitoPsicologo\app\src\main\AndroidManifest.xml:32:13-50
+		ADDED from D:\Trabajo\chino\appPsicoloAritutitoGit\ArturitoPsicologo\app\src\main\AndroidManifest.xml:38:13-50
 activity#com.example.arturitopsicologo.View.HorasActivity
-ADDED from D:\Trabajo\chino\appPsicoloAritutitoGit\ArturitoPsicologo\app\src\main\AndroidManifest.xml:35:9-38:72
+ADDED from D:\Trabajo\chino\appPsicoloAritutitoGit\ArturitoPsicologo\app\src\main\AndroidManifest.xml:41:9-44:72
 	android:exported
-		ADDED from D:\Trabajo\chino\appPsicoloAritutitoGit\ArturitoPsicologo\app\src\main\AndroidManifest.xml:37:13-37
+		ADDED from D:\Trabajo\chino\appPsicoloAritutitoGit\ArturitoPsicologo\app\src\main\AndroidManifest.xml:43:13-37
 	android:theme
-		ADDED from D:\Trabajo\chino\appPsicoloAritutitoGit\ArturitoPsicologo\app\src\main\AndroidManifest.xml:38:13-69
+		ADDED from D:\Trabajo\chino\appPsicoloAritutitoGit\ArturitoPsicologo\app\src\main\AndroidManifest.xml:44:13-69
 	android:name
-		ADDED from D:\Trabajo\chino\appPsicoloAritutitoGit\ArturitoPsicologo\app\src\main\AndroidManifest.xml:36:13-47
+		ADDED from D:\Trabajo\chino\appPsicoloAritutitoGit\ArturitoPsicologo\app\src\main\AndroidManifest.xml:42:13-47
 activity#com.example.arturitopsicologo.SplashActivity
-ADDED from D:\Trabajo\chino\appPsicoloAritutitoGit\ArturitoPsicologo\app\src\main\AndroidManifest.xml:39:9-47:20
+ADDED from D:\Trabajo\chino\appPsicoloAritutitoGit\ArturitoPsicologo\app\src\main\AndroidManifest.xml:45:9-53:20
 	android:exported
-		ADDED from D:\Trabajo\chino\appPsicoloAritutitoGit\ArturitoPsicologo\app\src\main\AndroidManifest.xml:41:13-36
+		ADDED from D:\Trabajo\chino\appPsicoloAritutitoGit\ArturitoPsicologo\app\src\main\AndroidManifest.xml:47:13-36
 	android:name
-		ADDED from D:\Trabajo\chino\appPsicoloAritutitoGit\ArturitoPsicologo\app\src\main\AndroidManifest.xml:40:13-43
+		ADDED from D:\Trabajo\chino\appPsicoloAritutitoGit\ArturitoPsicologo\app\src\main\AndroidManifest.xml:46:13-43
 intent-filter#action:name:android.intent.action.MAIN+category:name:android.intent.category.LAUNCHER
-ADDED from D:\Trabajo\chino\appPsicoloAritutitoGit\ArturitoPsicologo\app\src\main\AndroidManifest.xml:42:13-46:29
+ADDED from D:\Trabajo\chino\appPsicoloAritutitoGit\ArturitoPsicologo\app\src\main\AndroidManifest.xml:48:13-52:29
 action#android.intent.action.MAIN
-ADDED from D:\Trabajo\chino\appPsicoloAritutitoGit\ArturitoPsicologo\app\src\main\AndroidManifest.xml:43:17-69
+ADDED from D:\Trabajo\chino\appPsicoloAritutitoGit\ArturitoPsicologo\app\src\main\AndroidManifest.xml:49:17-69
 	android:name
-		ADDED from D:\Trabajo\chino\appPsicoloAritutitoGit\ArturitoPsicologo\app\src\main\AndroidManifest.xml:43:25-66
+		ADDED from D:\Trabajo\chino\appPsicoloAritutitoGit\ArturitoPsicologo\app\src\main\AndroidManifest.xml:49:25-66
 category#android.intent.category.LAUNCHER
-ADDED from D:\Trabajo\chino\appPsicoloAritutitoGit\ArturitoPsicologo\app\src\main\AndroidManifest.xml:45:17-77
+ADDED from D:\Trabajo\chino\appPsicoloAritutitoGit\ArturitoPsicologo\app\src\main\AndroidManifest.xml:51:17-77
 	android:name
-		ADDED from D:\Trabajo\chino\appPsicoloAritutitoGit\ArturitoPsicologo\app\src\main\AndroidManifest.xml:45:27-74
+		ADDED from D:\Trabajo\chino\appPsicoloAritutitoGit\ArturitoPsicologo\app\src\main\AndroidManifest.xml:51:27-74
 activity#com.example.arturitopsicologo.View.HorarioActivity
-ADDED from D:\Trabajo\chino\appPsicoloAritutitoGit\ArturitoPsicologo\app\src\main\AndroidManifest.xml:48:9-51:72
+ADDED from D:\Trabajo\chino\appPsicoloAritutitoGit\ArturitoPsicologo\app\src\main\AndroidManifest.xml:54:9-57:72
 	android:exported
-		ADDED from D:\Trabajo\chino\appPsicoloAritutitoGit\ArturitoPsicologo\app\src\main\AndroidManifest.xml:50:13-37
+		ADDED from D:\Trabajo\chino\appPsicoloAritutitoGit\ArturitoPsicologo\app\src\main\AndroidManifest.xml:56:13-37
 	android:theme
-		ADDED from D:\Trabajo\chino\appPsicoloAritutitoGit\ArturitoPsicologo\app\src\main\AndroidManifest.xml:51:13-69
+		ADDED from D:\Trabajo\chino\appPsicoloAritutitoGit\ArturitoPsicologo\app\src\main\AndroidManifest.xml:57:13-69
 	android:name
-		ADDED from D:\Trabajo\chino\appPsicoloAritutitoGit\ArturitoPsicologo\app\src\main\AndroidManifest.xml:49:13-49
+		ADDED from D:\Trabajo\chino\appPsicoloAritutitoGit\ArturitoPsicologo\app\src\main\AndroidManifest.xml:55:13-49
 activity#com.example.arturitopsicologo.View.PerfilActivity
-ADDED from D:\Trabajo\chino\appPsicoloAritutitoGit\ArturitoPsicologo\app\src\main\AndroidManifest.xml:52:9-54:40
+ADDED from D:\Trabajo\chino\appPsicoloAritutitoGit\ArturitoPsicologo\app\src\main\AndroidManifest.xml:58:9-60:40
 	android:exported
-		ADDED from D:\Trabajo\chino\appPsicoloAritutitoGit\ArturitoPsicologo\app\src\main\AndroidManifest.xml:54:13-37
+		ADDED from D:\Trabajo\chino\appPsicoloAritutitoGit\ArturitoPsicologo\app\src\main\AndroidManifest.xml:60:13-37
 	android:name
-		ADDED from D:\Trabajo\chino\appPsicoloAritutitoGit\ArturitoPsicologo\app\src\main\AndroidManifest.xml:53:13-48
+		ADDED from D:\Trabajo\chino\appPsicoloAritutitoGit\ArturitoPsicologo\app\src\main\AndroidManifest.xml:59:13-48
 activity#com.example.arturitopsicologo.RegisterActivity
-ADDED from D:\Trabajo\chino\appPsicoloAritutitoGit\ArturitoPsicologo\app\src\main\AndroidManifest.xml:55:9-57:40
-	android:exported
-		ADDED from D:\Trabajo\chino\appPsicoloAritutitoGit\ArturitoPsicologo\app\src\main\AndroidManifest.xml:57:13-37
-	android:name
-		ADDED from D:\Trabajo\chino\appPsicoloAritutitoGit\ArturitoPsicologo\app\src\main\AndroidManifest.xml:56:13-45
-activity#com.example.arturitopsicologo.LoginActivity
-ADDED from D:\Trabajo\chino\appPsicoloAritutitoGit\ArturitoPsicologo\app\src\main\AndroidManifest.xml:58:9-60:39
-	android:exported
-		ADDED from D:\Trabajo\chino\appPsicoloAritutitoGit\ArturitoPsicologo\app\src\main\AndroidManifest.xml:60:13-36
-	android:name
-		ADDED from D:\Trabajo\chino\appPsicoloAritutitoGit\ArturitoPsicologo\app\src\main\AndroidManifest.xml:59:13-42
-activity#com.example.arturitopsicologo.View.FiguraActivity
 ADDED from D:\Trabajo\chino\appPsicoloAritutitoGit\ArturitoPsicologo\app\src\main\AndroidManifest.xml:61:9-63:40
 	android:exported
 		ADDED from D:\Trabajo\chino\appPsicoloAritutitoGit\ArturitoPsicologo\app\src\main\AndroidManifest.xml:63:13-37
 	android:name
-		ADDED from D:\Trabajo\chino\appPsicoloAritutitoGit\ArturitoPsicologo\app\src\main\AndroidManifest.xml:62:13-48
+		ADDED from D:\Trabajo\chino\appPsicoloAritutitoGit\ArturitoPsicologo\app\src\main\AndroidManifest.xml:62:13-45
+activity#com.example.arturitopsicologo.LoginActivity
+ADDED from D:\Trabajo\chino\appPsicoloAritutitoGit\ArturitoPsicologo\app\src\main\AndroidManifest.xml:64:9-66:39
+	android:exported
+		ADDED from D:\Trabajo\chino\appPsicoloAritutitoGit\ArturitoPsicologo\app\src\main\AndroidManifest.xml:66:13-36
+	android:name
+		ADDED from D:\Trabajo\chino\appPsicoloAritutitoGit\ArturitoPsicologo\app\src\main\AndroidManifest.xml:65:13-42
+activity#com.example.arturitopsicologo.View.FiguraActivity
+ADDED from D:\Trabajo\chino\appPsicoloAritutitoGit\ArturitoPsicologo\app\src\main\AndroidManifest.xml:67:9-69:40
+	android:exported
+		ADDED from D:\Trabajo\chino\appPsicoloAritutitoGit\ArturitoPsicologo\app\src\main\AndroidManifest.xml:69:13-37
+	android:name
+		ADDED from D:\Trabajo\chino\appPsicoloAritutitoGit\ArturitoPsicologo\app\src\main\AndroidManifest.xml:68:13-48
 activity#com.example.arturitopsicologo.View.LecturaActivity
-ADDED from D:\Trabajo\chino\appPsicoloAritutitoGit\ArturitoPsicologo\app\src\main\AndroidManifest.xml:64:9-67:72
+ADDED from D:\Trabajo\chino\appPsicoloAritutitoGit\ArturitoPsicologo\app\src\main\AndroidManifest.xml:70:9-73:72
 	android:exported
-		ADDED from D:\Trabajo\chino\appPsicoloAritutitoGit\ArturitoPsicologo\app\src\main\AndroidManifest.xml:66:13-37
+		ADDED from D:\Trabajo\chino\appPsicoloAritutitoGit\ArturitoPsicologo\app\src\main\AndroidManifest.xml:72:13-37
 	android:theme
-		ADDED from D:\Trabajo\chino\appPsicoloAritutitoGit\ArturitoPsicologo\app\src\main\AndroidManifest.xml:67:13-69
+		ADDED from D:\Trabajo\chino\appPsicoloAritutitoGit\ArturitoPsicologo\app\src\main\AndroidManifest.xml:73:13-69
 	android:name
-		ADDED from D:\Trabajo\chino\appPsicoloAritutitoGit\ArturitoPsicologo\app\src\main\AndroidManifest.xml:65:13-49
+		ADDED from D:\Trabajo\chino\appPsicoloAritutitoGit\ArturitoPsicologo\app\src\main\AndroidManifest.xml:71:13-49
 activity#com.example.arturitopsicologo.View.LecturasActivity
-ADDED from D:\Trabajo\chino\appPsicoloAritutitoGit\ArturitoPsicologo\app\src\main\AndroidManifest.xml:68:9-71:72
+ADDED from D:\Trabajo\chino\appPsicoloAritutitoGit\ArturitoPsicologo\app\src\main\AndroidManifest.xml:74:9-77:72
 	android:exported
-		ADDED from D:\Trabajo\chino\appPsicoloAritutitoGit\ArturitoPsicologo\app\src\main\AndroidManifest.xml:70:13-37
+		ADDED from D:\Trabajo\chino\appPsicoloAritutitoGit\ArturitoPsicologo\app\src\main\AndroidManifest.xml:76:13-37
 	android:theme
-		ADDED from D:\Trabajo\chino\appPsicoloAritutitoGit\ArturitoPsicologo\app\src\main\AndroidManifest.xml:71:13-69
+		ADDED from D:\Trabajo\chino\appPsicoloAritutitoGit\ArturitoPsicologo\app\src\main\AndroidManifest.xml:77:13-69
 	android:name
-		ADDED from D:\Trabajo\chino\appPsicoloAritutitoGit\ArturitoPsicologo\app\src\main\AndroidManifest.xml:69:13-50
+		ADDED from D:\Trabajo\chino\appPsicoloAritutitoGit\ArturitoPsicologo\app\src\main\AndroidManifest.xml:75:13-50
 activity#com.example.arturitopsicologo.View.CategoriaActivity
-ADDED from D:\Trabajo\chino\appPsicoloAritutitoGit\ArturitoPsicologo\app\src\main\AndroidManifest.xml:72:9-74:40
-	android:exported
-		ADDED from D:\Trabajo\chino\appPsicoloAritutitoGit\ArturitoPsicologo\app\src\main\AndroidManifest.xml:74:13-37
-	android:name
-		ADDED from D:\Trabajo\chino\appPsicoloAritutitoGit\ArturitoPsicologo\app\src\main\AndroidManifest.xml:73:13-51
-activity#com.example.arturitopsicologo.View.HerramientasActivity
-ADDED from D:\Trabajo\chino\appPsicoloAritutitoGit\ArturitoPsicologo\app\src\main\AndroidManifest.xml:75:9-77:40
-	android:exported
-		ADDED from D:\Trabajo\chino\appPsicoloAritutitoGit\ArturitoPsicologo\app\src\main\AndroidManifest.xml:77:13-37
-	android:name
-		ADDED from D:\Trabajo\chino\appPsicoloAritutitoGit\ArturitoPsicologo\app\src\main\AndroidManifest.xml:76:13-54
-activity#com.example.arturitopsicologo.View.CitasActivity
 ADDED from D:\Trabajo\chino\appPsicoloAritutitoGit\ArturitoPsicologo\app\src\main\AndroidManifest.xml:78:9-80:40
 	android:exported
 		ADDED from D:\Trabajo\chino\appPsicoloAritutitoGit\ArturitoPsicologo\app\src\main\AndroidManifest.xml:80:13-37
 	android:name
-		ADDED from D:\Trabajo\chino\appPsicoloAritutitoGit\ArturitoPsicologo\app\src\main\AndroidManifest.xml:79:13-47
-activity#com.example.arturitopsicologo.MenuActivity
-ADDED from D:\Trabajo\chino\appPsicoloAritutitoGit\ArturitoPsicologo\app\src\main\AndroidManifest.xml:81:9-83:39
+		ADDED from D:\Trabajo\chino\appPsicoloAritutitoGit\ArturitoPsicologo\app\src\main\AndroidManifest.xml:79:13-51
+activity#com.example.arturitopsicologo.View.HerramientasActivity
+ADDED from D:\Trabajo\chino\appPsicoloAritutitoGit\ArturitoPsicologo\app\src\main\AndroidManifest.xml:81:9-83:40
 	android:exported
-		ADDED from D:\Trabajo\chino\appPsicoloAritutitoGit\ArturitoPsicologo\app\src\main\AndroidManifest.xml:83:13-36
+		ADDED from D:\Trabajo\chino\appPsicoloAritutitoGit\ArturitoPsicologo\app\src\main\AndroidManifest.xml:83:13-37
 	android:name
-		ADDED from D:\Trabajo\chino\appPsicoloAritutitoGit\ArturitoPsicologo\app\src\main\AndroidManifest.xml:82:13-41
-activity#com.example.arturitopsicologo.InicioActivity
+		ADDED from D:\Trabajo\chino\appPsicoloAritutitoGit\ArturitoPsicologo\app\src\main\AndroidManifest.xml:82:13-54
+activity#com.example.arturitopsicologo.View.CitasActivity
 ADDED from D:\Trabajo\chino\appPsicoloAritutitoGit\ArturitoPsicologo\app\src\main\AndroidManifest.xml:84:9-86:40
 	android:exported
 		ADDED from D:\Trabajo\chino\appPsicoloAritutitoGit\ArturitoPsicologo\app\src\main\AndroidManifest.xml:86:13-37
 	android:name
-		ADDED from D:\Trabajo\chino\appPsicoloAritutitoGit\ArturitoPsicologo\app\src\main\AndroidManifest.xml:85:13-43
-activity#com.example.arturitopsicologo.MainActivity
+		ADDED from D:\Trabajo\chino\appPsicoloAritutitoGit\ArturitoPsicologo\app\src\main\AndroidManifest.xml:85:13-47
+activity#com.example.arturitopsicologo.MenuActivity
 ADDED from D:\Trabajo\chino\appPsicoloAritutitoGit\ArturitoPsicologo\app\src\main\AndroidManifest.xml:87:9-89:39
 	android:exported
 		ADDED from D:\Trabajo\chino\appPsicoloAritutitoGit\ArturitoPsicologo\app\src\main\AndroidManifest.xml:89:13-36
 	android:name
 		ADDED from D:\Trabajo\chino\appPsicoloAritutitoGit\ArturitoPsicologo\app\src\main\AndroidManifest.xml:88:13-41
+activity#com.example.arturitopsicologo.InicioActivity
+ADDED from D:\Trabajo\chino\appPsicoloAritutitoGit\ArturitoPsicologo\app\src\main\AndroidManifest.xml:90:9-92:40
+	android:exported
+		ADDED from D:\Trabajo\chino\appPsicoloAritutitoGit\ArturitoPsicologo\app\src\main\AndroidManifest.xml:92:13-37
+	android:name
+		ADDED from D:\Trabajo\chino\appPsicoloAritutitoGit\ArturitoPsicologo\app\src\main\AndroidManifest.xml:91:13-43
+activity#com.example.arturitopsicologo.MainActivity
+ADDED from D:\Trabajo\chino\appPsicoloAritutitoGit\ArturitoPsicologo\app\src\main\AndroidManifest.xml:93:9-95:39
+	android:exported
+		ADDED from D:\Trabajo\chino\appPsicoloAritutitoGit\ArturitoPsicologo\app\src\main\AndroidManifest.xml:95:13-36
+	android:name
+		ADDED from D:\Trabajo\chino\appPsicoloAritutitoGit\ArturitoPsicologo\app\src\main\AndroidManifest.xml:94:13-41
 uses-sdk
 INJECTED from D:\Trabajo\chino\appPsicoloAritutitoGit\ArturitoPsicologo\app\src\main\AndroidManifest.xml reason: use-sdk injection requested
 INJECTED from D:\Trabajo\chino\appPsicoloAritutitoGit\ArturitoPsicologo\app\src\main\AndroidManifest.xml

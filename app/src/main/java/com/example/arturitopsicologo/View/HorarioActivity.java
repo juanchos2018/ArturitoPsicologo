@@ -85,6 +85,18 @@ public class HorarioActivity extends AppCompatActivity  implements View.OnClickL
 
         RecyclerView recyclerView=(RecyclerView)findViewById(R.id.recylerFechas);
         recyclerView.setLayoutManager(new LinearLayoutManager(this, LinearLayoutManager.VERTICAL, false));
+        recyclerView.addOnScrollListener(new RecyclerView.OnScrollListener() {
+            @Override
+            public void onScrolled(RecyclerView recyclerView, int dx, int dy) {
+                super.onScrolled(recyclerView, dx, dy);
+                if (dy > 0 && btnaddFecha.getVisibility() == View.VISIBLE) {
+                    btnaddFecha.hide();
+                } else if (dy < 0 && btnaddFecha.getVisibility() != View.VISIBLE) {
+                    btnaddFecha.show();
+
+                }
+            }});
+
         presenter.cargarRecycler(recyclerView,user_id);
     }
 
@@ -213,8 +225,6 @@ public class HorarioActivity extends AppCompatActivity  implements View.OnClickL
             obj.setFecha1(fecha1);
             obj.setEstado("1");
             presenter.store(obj);
-
-
 
         }
     }

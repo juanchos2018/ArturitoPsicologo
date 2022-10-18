@@ -24,24 +24,24 @@
         "source": "D:\\Trabajo\\chino\\appPsicoloAritutitoGit\\ArturitoPsicologo\\app\\src\\main\\res\\mipmap-anydpi-v26\\ic_launcher_round.xml"
     },
     {
-        "merged": "D:\\Trabajo\\chino\\appPsicoloAritutitoGit\\ArturitoPsicologo\\app\\build\\intermediates\\merged_res\\debug\\drawable_pista_one.xml.flat",
-        "source": "D:\\Trabajo\\chino\\appPsicoloAritutitoGit\\ArturitoPsicologo\\app\\src\\main\\res\\drawable\\pista_one.xml"
-    },
-    {
         "merged": "D:\\Trabajo\\chino\\appPsicoloAritutitoGit\\ArturitoPsicologo\\app\\build\\intermediates\\merged_res\\debug\\mipmap-xxhdpi_ic_launcher_round.png.flat",
         "source": "D:\\Trabajo\\chino\\appPsicoloAritutitoGit\\ArturitoPsicologo\\app\\src\\main\\res\\mipmap-xxhdpi\\ic_launcher_round.png"
     },
     {
-        "merged": "D:\\Trabajo\\chino\\appPsicoloAritutitoGit\\ArturitoPsicologo\\app\\build\\intermediates\\merged_res\\debug\\mipmap-xxhdpi_ic_launcher.png.flat",
-        "source": "D:\\Trabajo\\chino\\appPsicoloAritutitoGit\\ArturitoPsicologo\\app\\src\\main\\res\\mipmap-xxhdpi\\ic_launcher.png"
+        "merged": "D:\\Trabajo\\chino\\appPsicoloAritutitoGit\\ArturitoPsicologo\\app\\build\\intermediates\\merged_res\\debug\\drawable_pista_one.xml.flat",
+        "source": "D:\\Trabajo\\chino\\appPsicoloAritutitoGit\\ArturitoPsicologo\\app\\src\\main\\res\\drawable\\pista_one.xml"
+    },
+    {
+        "merged": "D:\\Trabajo\\chino\\appPsicoloAritutitoGit\\ArturitoPsicologo\\app\\build\\intermediates\\merged_res\\debug\\drawable_atencion.png.flat",
+        "source": "D:\\Trabajo\\chino\\appPsicoloAritutitoGit\\ArturitoPsicologo\\app\\src\\main\\res\\drawable\\atencion.png"
     },
     {
         "merged": "D:\\Trabajo\\chino\\appPsicoloAritutitoGit\\ArturitoPsicologo\\app\\build\\intermediates\\merged_res\\debug\\drawable_borde_et1.xml.flat",
         "source": "D:\\Trabajo\\chino\\appPsicoloAritutitoGit\\ArturitoPsicologo\\app\\src\\main\\res\\drawable\\borde_et1.xml"
     },
     {
-        "merged": "D:\\Trabajo\\chino\\appPsicoloAritutitoGit\\ArturitoPsicologo\\app\\build\\intermediates\\merged_res\\debug\\drawable_atencion.png.flat",
-        "source": "D:\\Trabajo\\chino\\appPsicoloAritutitoGit\\ArturitoPsicologo\\app\\src\\main\\res\\drawable\\atencion.png"
+        "merged": "D:\\Trabajo\\chino\\appPsicoloAritutitoGit\\ArturitoPsicologo\\app\\build\\intermediates\\merged_res\\debug\\mipmap-xxhdpi_ic_launcher.png.flat",
+        "source": "D:\\Trabajo\\chino\\appPsicoloAritutitoGit\\ArturitoPsicologo\\app\\src\\main\\res\\mipmap-xxhdpi\\ic_launcher.png"
     },
     {
         "merged": "D:\\Trabajo\\chino\\appPsicoloAritutitoGit\\ArturitoPsicologo\\app\\build\\intermediates\\merged_res\\debug\\layout_item_lecura_dos.xml.flat",
@@ -68,12 +68,12 @@
         "source": "D:\\Trabajo\\chino\\appPsicoloAritutitoGit\\ArturitoPsicologo\\app\\src\\main\\res\\layout\\dialogo_historial.xml"
     },
     {
-        "merged": "D:\\Trabajo\\chino\\appPsicoloAritutitoGit\\ArturitoPsicologo\\app\\build\\intermediates\\merged_res\\debug\\drawable_romboapp.png.flat",
-        "source": "D:\\Trabajo\\chino\\appPsicoloAritutitoGit\\ArturitoPsicologo\\app\\src\\main\\res\\drawable\\romboapp.png"
-    },
-    {
         "merged": "D:\\Trabajo\\chino\\appPsicoloAritutitoGit\\ArturitoPsicologo\\app\\build\\intermediates\\merged_res\\debug\\drawable_pelota.png.flat",
         "source": "D:\\Trabajo\\chino\\appPsicoloAritutitoGit\\ArturitoPsicologo\\app\\src\\main\\res\\drawable\\pelota.png"
+    },
+    {
+        "merged": "D:\\Trabajo\\chino\\appPsicoloAritutitoGit\\ArturitoPsicologo\\app\\build\\intermediates\\merged_res\\debug\\drawable_romboapp.png.flat",
+        "source": "D:\\Trabajo\\chino\\appPsicoloAritutitoGit\\ArturitoPsicologo\\app\\src\\main\\res\\drawable\\romboapp.png"
     },
     {
         "merged": "D:\\Trabajo\\chino\\appPsicoloAritutitoGit\\ArturitoPsicologo\\app\\build\\intermediates\\merged_res\\debug\\drawable-v24_bg_yellow_dark_round.xml.flat",
@@ -114,6 +114,10 @@
     {
         "merged": "D:\\Trabajo\\chino\\appPsicoloAritutitoGit\\ArturitoPsicologo\\app\\build\\intermediates\\merged_res\\debug\\drawable_perro.png.flat",
         "source": "D:\\Trabajo\\chino\\appPsicoloAritutitoGit\\ArturitoPsicologo\\app\\src\\main\\res\\drawable\\perro.png"
+    },
+    {
+        "merged": "D:\\Trabajo\\chino\\appPsicoloAritutitoGit\\ArturitoPsicologo\\app\\build\\intermediates\\merged_res\\debug\\layout_dialogo_detalle.xml.flat",
+        "source": "D:\\Trabajo\\chino\\appPsicoloAritutitoGit\\ArturitoPsicologo\\app\\src\\main\\res\\layout\\dialogo_detalle.xml"
     },
     {
         "merged": "D:\\Trabajo\\chino\\appPsicoloAritutitoGit\\ArturitoPsicologo\\app\\build\\intermediates\\merged_res\\debug\\layout_activity_horas.xml.flat",
@@ -268,6 +272,10 @@
         "source": "D:\\Trabajo\\chino\\appPsicoloAritutitoGit\\ArturitoPsicologo\\app\\src\\main\\res\\drawable\\logopisco.png"
     },
     {
+        "merged": "D:\\Trabajo\\chino\\appPsicoloAritutitoGit\\ArturitoPsicologo\\app\\build\\intermediates\\merged_res\\debug\\layout_item_lenguaje.xml.flat",
+        "source": "D:\\Trabajo\\chino\\appPsicoloAritutitoGit\\ArturitoPsicologo\\app\\src\\main\\res\\layout\\item_lenguaje.xml"
+    },
+    {
         "merged": "D:\\Trabajo\\chino\\appPsicoloAritutitoGit\\ArturitoPsicologo\\app\\build\\intermediates\\merged_res\\debug\\mipmap-xxxhdpi_ic_launcher_round.png.flat",
         "source": "D:\\Trabajo\\chino\\appPsicoloAritutitoGit\\ArturitoPsicologo\\app\\src\\main\\res\\mipmap-xxxhdpi\\ic_launcher_round.png"
     },
@@ -324,6 +332,10 @@
         "source": "D:\\Trabajo\\chino\\appPsicoloAritutitoGit\\ArturitoPsicologo\\app\\src\\main\\res\\drawable\\borde_tres.xml"
     },
     {
+        "merged": "D:\\Trabajo\\chino\\appPsicoloAritutitoGit\\ArturitoPsicologo\\app\\build\\intermediates\\merged_res\\debug\\drawable-v24_plantilla.png.flat",
+        "source": "D:\\Trabajo\\chino\\appPsicoloAritutitoGit\\ArturitoPsicologo\\app\\src\\main\\res\\drawable-v24\\plantilla.png"
+    },
+    {
         "merged": "D:\\Trabajo\\chino\\appPsicoloAritutitoGit\\ArturitoPsicologo\\app\\build\\intermediates\\merged_res\\debug\\drawable_resultados.jpg.flat",
         "source": "D:\\Trabajo\\chino\\appPsicoloAritutitoGit\\ArturitoPsicologo\\app\\src\\main\\res\\drawable\\resultados.jpg"
     },
@@ -378,6 +390,10 @@
     {
         "merged": "D:\\Trabajo\\chino\\appPsicoloAritutitoGit\\ArturitoPsicologo\\app\\build\\intermediates\\merged_res\\debug\\drawable_forma_uno.xml.flat",
         "source": "D:\\Trabajo\\chino\\appPsicoloAritutitoGit\\ArturitoPsicologo\\app\\src\\main\\res\\drawable\\forma_uno.xml"
+    },
+    {
+        "merged": "D:\\Trabajo\\chino\\appPsicoloAritutitoGit\\ArturitoPsicologo\\app\\build\\intermediates\\merged_res\\debug\\layout_activity_lenguaje_crear.xml.flat",
+        "source": "D:\\Trabajo\\chino\\appPsicoloAritutitoGit\\ArturitoPsicologo\\app\\src\\main\\res\\layout\\activity_lenguaje_crear.xml"
     },
     {
         "merged": "D:\\Trabajo\\chino\\appPsicoloAritutitoGit\\ArturitoPsicologo\\app\\build\\intermediates\\merged_res\\debug\\drawable_splash_logo.png.flat",
@@ -518,6 +534,10 @@
     {
         "merged": "D:\\Trabajo\\chino\\appPsicoloAritutitoGit\\ArturitoPsicologo\\app\\build\\intermediates\\merged_res\\debug\\mipmap-anydpi-v26_ic_launcher.xml.flat",
         "source": "D:\\Trabajo\\chino\\appPsicoloAritutitoGit\\ArturitoPsicologo\\app\\src\\main\\res\\mipmap-anydpi-v26\\ic_launcher.xml"
+    },
+    {
+        "merged": "D:\\Trabajo\\chino\\appPsicoloAritutitoGit\\ArturitoPsicologo\\app\\build\\intermediates\\merged_res\\debug\\layout_activity_lenguaje.xml.flat",
+        "source": "D:\\Trabajo\\chino\\appPsicoloAritutitoGit\\ArturitoPsicologo\\app\\src\\main\\res\\layout\\activity_lenguaje.xml"
     },
     {
         "merged": "D:\\Trabajo\\chino\\appPsicoloAritutitoGit\\ArturitoPsicologo\\app\\build\\intermediates\\merged_res\\debug\\drawable_bg_color.xml.flat",

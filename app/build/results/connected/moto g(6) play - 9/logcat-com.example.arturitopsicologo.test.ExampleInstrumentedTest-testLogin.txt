@@ -1,2 +1,0 @@
-10-11 00:16:56.599 31836 31866 I TestRunner: started: testLogin(com.example.arturitopsicologo.test.ExampleInstrumentedTest)
-10-11 00:16:56.612 31836 31866 I TestRunner: finished: testLogin(com.example.arturitopsicologo.test.ExampleInstrumentedTest)

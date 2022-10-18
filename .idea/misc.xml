@@ -82,14 +82,33 @@
         <entry key="..\:/Trabajo/chino/ArturitoPsicologo/app/src/main/res/mipmap-anydpi-v26/ic_launcher.xml" value="0.1585" />
         <entry key="..\:/Trabajo/chino/ArturitoPsicologo/app/src/main/res/mipmap-anydpi-v26/ic_launcher_round.xml" value="0.1585" />
         <entry key="..\:/Trabajo/chino/appPsicoloAritutitoGit/ArturitoPsicologo/app/src/main/res/layout/activity_categoria.xml" value="0.36666666666666664" />
+        <entry key="..\:/Trabajo/chino/appPsicoloAritutitoGit/ArturitoPsicologo/app/src/main/res/layout/activity_categoria_paciente.xml" value="0.2864583333333333" />
+        <entry key="..\:/Trabajo/chino/appPsicoloAritutitoGit/ArturitoPsicologo/app/src/main/res/layout/activity_citas.xml" value="0.27291666666666664" />
         <entry key="..\:/Trabajo/chino/appPsicoloAritutitoGit/ArturitoPsicologo/app/src/main/res/layout/activity_herramientas.xml" value="0.36666666666666664" />
         <entry key="..\:/Trabajo/chino/appPsicoloAritutitoGit/ArturitoPsicologo/app/src/main/res/layout/activity_horario.xml" value="0.25833333333333336" />
+        <entry key="..\:/Trabajo/chino/appPsicoloAritutitoGit/ArturitoPsicologo/app/src/main/res/layout/activity_lectura.xml" value="0.36666666666666664" />
+        <entry key="..\:/Trabajo/chino/appPsicoloAritutitoGit/ArturitoPsicologo/app/src/main/res/layout/activity_lenguaje.xml" value="0.25" />
+        <entry key="..\:/Trabajo/chino/appPsicoloAritutitoGit/ArturitoPsicologo/app/src/main/res/layout/activity_lenguaje_crear.xml" value="0.36666666666666664" />
+        <entry key="..\:/Trabajo/chino/appPsicoloAritutitoGit/ArturitoPsicologo/app/src/main/res/layout/activity_login.xml" value="0.2765625" />
         <entry key="..\:/Trabajo/chino/appPsicoloAritutitoGit/ArturitoPsicologo/app/src/main/res/layout/activity_menu.xml" value="0.36666666666666664" />
         <entry key="..\:/Trabajo/chino/appPsicoloAritutitoGit/ArturitoPsicologo/app/src/main/res/layout/activity_perfil.xml" value="0.271875" />
+        <entry key="..\:/Trabajo/chino/appPsicoloAritutitoGit/ArturitoPsicologo/app/src/main/res/layout/activity_register.xml" value="0.2765625" />
+        <entry key="..\:/Trabajo/chino/appPsicoloAritutitoGit/ArturitoPsicologo/app/src/main/res/layout/activity_resultado.xml" value="0.18854166666666666" />
+        <entry key="..\:/Trabajo/chino/appPsicoloAritutitoGit/ArturitoPsicologo/app/src/main/res/layout/dialogo_detalle.xml" value="0.271875" />
+        <entry key="..\:/Trabajo/chino/appPsicoloAritutitoGit/ArturitoPsicologo/app/src/main/res/layout/dialogo_horas.xml" value="0.2765625" />
+        <entry key="..\:/Trabajo/chino/appPsicoloAritutitoGit/ArturitoPsicologo/app/src/main/res/layout/fragment_atencion.xml" value="0.2864583333333333" />
         <entry key="..\:/Trabajo/chino/appPsicoloAritutitoGit/ArturitoPsicologo/app/src/main/res/layout/fragment_edit.xml" value="0.271875" />
+        <entry key="..\:/Trabajo/chino/appPsicoloAritutitoGit/ArturitoPsicologo/app/src/main/res/layout/fragment_perfil.xml" value="0.27291666666666664" />
+        <entry key="..\:/Trabajo/chino/appPsicoloAritutitoGit/ArturitoPsicologo/app/src/main/res/layout/fragment_resultados.xml" value="0.36666666666666664" />
         <entry key="..\:/Trabajo/chino/appPsicoloAritutitoGit/ArturitoPsicologo/app/src/main/res/layout/item_atencion.xml" value="0.36666666666666664" />
         <entry key="..\:/Trabajo/chino/appPsicoloAritutitoGit/ArturitoPsicologo/app/src/main/res/layout/item_fechas.xml" value="0.36666666666666664" />
         <entry key="..\:/Trabajo/chino/appPsicoloAritutitoGit/ArturitoPsicologo/app/src/main/res/layout/item_herramienta.xml" value="0.36666666666666664" />
+        <entry key="..\:/Trabajo/chino/appPsicoloAritutitoGit/ArturitoPsicologo/app/src/main/res/layout/item_horarios.xml" value="0.33" />
+        <entry key="..\:/Trabajo/chino/appPsicoloAritutitoGit/ArturitoPsicologo/app/src/main/res/layout/item_lectura.xml" value="0.36666666666666664" />
+        <entry key="..\:/Trabajo/chino/appPsicoloAritutitoGit/ArturitoPsicologo/app/src/main/res/layout/item_lecura_dos.xml" value="0.36666666666666664" />
+        <entry key="..\:/Trabajo/chino/appPsicoloAritutitoGit/ArturitoPsicologo/app/src/main/res/layout/item_lenguaje.xml" value="0.275" />
+        <entry key="..\:/Trabajo/chino/appPsicoloAritutitoGit/ArturitoPsicologo/app/src/main/res/layout/item_memoria.xml" value="0.36666666666666664" />
+        <entry key="..\:/Trabajo/chino/appPsicoloAritutitoGit/ArturitoPsicologo/app/src/main/res/layout/item_pacientes.xml" value="0.36666666666666664" />
       </map>
     </option>
   </component>

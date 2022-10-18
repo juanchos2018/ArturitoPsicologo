@@ -22,7 +22,7 @@
                 android:id="@+id/idestado"
                 android:textSize="20sp"
                 android:textStyle="bold"
-                android:text="Editar hora"
+                android:text="Agregar hora"
                 android:layout_gravity="center"
                 android:layout_marginTop="5dp"
                 android:layout_marginBottom="10dp"

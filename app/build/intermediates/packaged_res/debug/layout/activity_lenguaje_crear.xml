@@ -1,0 +1,277 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout
+    xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:orientation="vertical"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:padding="20dp"
+    tools:context=".View.LenguajeCrearActivity">
+
+    <ScrollView
+        android:layout_width="match_parent"
+        android:layout_height="match_parent">
+        <LinearLayout
+            android:orientation="vertical"
+            android:layout_width="match_parent"
+            android:layout_height="match_parent">
+
+            <LinearLayout
+                android:weightSum="2"
+                android:orientation="horizontal"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                >
+
+
+                <LinearLayout
+                    android:layout_weight="1"
+                    android:orientation="vertical"
+                    android:layout_width="0dp"
+                    android:layout_height="wrap_content">
+                    <TextView
+                        android:layout_marginTop="5dp"
+                        android:text="Palabra 1"
+                        android:layout_width="match_parent"
+                        android:layout_height="wrap_content" >
+                    </TextView>
+
+                    <EditText
+                        android:id="@+id/txtpalabra1"
+                        android:layout_marginTop="5dp"
+                        android:layout_marginBottom="5dp"
+                        android:layout_width="match_parent"
+                        android:layout_height="wrap_content"    >
+                    </EditText>
+                    <TextView
+                        android:layout_marginTop="5dp"
+                        android:text="Palabra 2"
+                        android:layout_width="match_parent"
+                        android:layout_height="wrap_content" >
+                    </TextView>
+
+                    <EditText
+                        android:id="@+id/txtpalabra2"
+                        android:layout_marginTop="5dp"
+                        android:layout_marginBottom="5dp"
+                        android:layout_width="match_parent"
+                        android:layout_height="wrap_content"    >
+                    </EditText>
+
+                    <TextView
+                        android:layout_marginTop="5dp"
+                        android:text="Palabra 3"
+                        android:layout_width="match_parent"
+                        android:layout_height="wrap_content" >
+                    </TextView>
+
+                    <EditText
+                        android:id="@+id/txtpalabra3"
+                        android:layout_marginTop="5dp"
+                        android:layout_marginBottom="5dp"
+                        android:layout_width="match_parent"
+                        android:layout_height="wrap_content"    >
+                    </EditText>
+                    <TextView
+                        android:layout_marginTop="5dp"
+                        android:text="Palabra 4"
+                        android:layout_width="match_parent"
+                        android:layout_height="wrap_content" >
+                    </TextView>
+
+                    <EditText
+                        android:id="@+id/txtpalabra4"
+                        android:layout_marginTop="5dp"
+                        android:layout_marginBottom="5dp"
+                        android:layout_width="match_parent"
+                        android:layout_height="wrap_content"    >
+                    </EditText>
+
+                    <TextView
+                        android:layout_marginTop="5dp"
+                        android:text="Palabra 5"
+                        android:layout_width="match_parent"
+                        android:layout_height="wrap_content" >
+                    </TextView>
+
+                    <EditText
+                        android:id="@+id/txtpalabra5"
+                        android:layout_marginTop="5dp"
+                        android:layout_marginBottom="5dp"
+                        android:layout_width="match_parent"
+                        android:layout_height="wrap_content"    >
+                    </EditText>
+
+
+                    <TextView
+                        android:layout_marginTop="5dp"
+                        android:text="Palabra 6"
+                        android:layout_width="match_parent"
+                        android:layout_height="wrap_content" >
+                    </TextView>
+
+                    <EditText
+                        android:id="@+id/txtpalabra6"
+                        android:layout_marginTop="5dp"
+                        android:layout_marginBottom="5dp"
+                        android:layout_width="match_parent"
+                        android:layout_height="wrap_content"    >
+                    </EditText>
+                    <TextView
+                        android:layout_marginTop="5dp"
+                        android:text="Palabra 7"
+                        android:layout_width="match_parent"
+                        android:layout_height="wrap_content" >
+                    </TextView>
+
+                    <EditText
+                        android:id="@+id/txtpalabra7"
+                        android:layout_marginTop="5dp"
+                        android:layout_marginBottom="5dp"
+                        android:layout_width="match_parent"
+                        android:layout_height="wrap_content"    >
+                    </EditText>
+
+                    <TextView
+                        android:layout_marginTop="5dp"
+                        android:text="Palabra 8"
+                        android:layout_width="match_parent"
+                        android:layout_height="wrap_content" >
+                    </TextView>
+
+                    <EditText
+                        android:id="@+id/txtpalabra8"
+                        android:layout_marginTop="5dp"
+                        android:layout_marginBottom="5dp"
+                        android:layout_width="match_parent"
+                        android:layout_height="wrap_content"    >
+                    </EditText>
+
+                </LinearLayout>
+
+
+                <LinearLayout
+                    android:layout_weight="1"
+                    android:orientation="vertical"
+                    android:layout_width="0dp"
+                    android:layout_height="wrap_content">
+                    <TextView
+                        android:layout_marginTop="5dp"
+                        android:text="Palabra 9"
+                        android:layout_width="match_parent"
+                        android:layout_height="wrap_content" >
+                    </TextView>
+
+                    <EditText
+                        android:id="@+id/txtpalabra9"
+                        android:layout_marginTop="5dp"
+                        android:layout_marginBottom="5dp"
+                        android:layout_width="match_parent"
+                        android:layout_height="wrap_content"    >
+                    </EditText>
+                    <TextView
+                        android:layout_marginTop="5dp"
+                        android:text="Palabra 10"
+                        android:layout_width="match_parent"
+                        android:layout_height="wrap_content" >
+                    </TextView>
+
+                    <EditText
+                        android:id="@+id/txtpalabra10"
+                        android:layout_marginTop="5dp"
+                        android:layout_marginBottom="5dp"
+                        android:layout_width="match_parent"
+                        android:layout_height="wrap_content"    >
+                    </EditText>
+                    <TextView
+                        android:layout_marginTop="5dp"
+                        android:text="Palabra 11"
+                        android:layout_width="match_parent"
+                        android:layout_height="wrap_content" >
+                    </TextView>
+
+                    <EditText
+                        android:id="@+id/txtpalabra11"
+                        android:layout_marginTop="5dp"
+                        android:layout_marginBottom="5dp"
+                        android:layout_width="match_parent"
+                        android:layout_height="wrap_content"    >
+                    </EditText>
+                    <TextView
+                        android:layout_marginTop="5dp"
+                        android:text="Palabra 12"
+                        android:layout_width="match_parent"
+                        android:layout_height="wrap_content" >
+                    </TextView>
+
+                    <EditText
+                        android:id="@+id/txtpalabra12"
+                        android:layout_marginTop="5dp"
+                        android:layout_marginBottom="5dp"
+                        android:layout_width="match_parent"
+                        android:layout_height="wrap_content"    >
+                    </EditText>
+
+                    <TextView
+                        android:layout_marginTop="5dp"
+                        android:text="Palabra 13"
+                        android:layout_width="match_parent"
+                        android:layout_height="wrap_content" >
+                    </TextView>
+
+                    <EditText
+                        android:id="@+id/txtpalabra13"
+                        android:layout_marginTop="5dp"
+                        android:layout_marginBottom="5dp"
+                        android:layout_width="match_parent"
+                        android:layout_height="wrap_content"    >
+                    </EditText>
+
+                    <TextView
+                        android:layout_marginTop="5dp"
+                        android:text="Palabra 14"
+                        android:layout_width="match_parent"
+                        android:layout_height="wrap_content" >
+                    </TextView>
+
+                    <EditText
+                        android:id="@+id/txtpalabra14"
+                        android:layout_marginTop="5dp"
+                        android:layout_marginBottom="5dp"
+                        android:layout_width="match_parent"
+                        android:layout_height="wrap_content"    >
+                    </EditText>
+                    <TextView
+                        android:layout_marginTop="5dp"
+                        android:text="Palabra 15"
+                        android:layout_width="match_parent"
+                        android:layout_height="wrap_content" >
+                    </TextView>
+
+                    <EditText
+                        android:id="@+id/txtpalabra15"
+                        android:layout_marginTop="5dp"
+                        android:layout_marginBottom="5dp"
+                        android:layout_width="match_parent"
+                        android:layout_height="wrap_content"    >
+                    </EditText>
+                </LinearLayout>
+            </LinearLayout>
+
+            <Button
+                android:id="@+id/btnguardar"
+                android:text="Guardar"
+                android:layout_width="match_parent"
+                android:layout_height="match_parent">
+            </Button>
+
+
+        </LinearLayout>
+
+    </ScrollView>
+
+
+
+
+</LinearLayout>

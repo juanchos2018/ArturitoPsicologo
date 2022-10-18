@@ -21,16 +21,12 @@ import com.example.arturitopsicologo.Test.UsuarioTest;
 @RunWith(AndroidJUnit4.class)
 public class ExampleInstrumentedTest {
 
-
     private UsuarioTest usuarioTest;
-
-
 
     @Before
     public void  setUp(){
         usuarioTest = new UsuarioTest();
     }
-
 
     @Test
     public void useAppContext() {
@@ -38,7 +34,6 @@ public class ExampleInstrumentedTest {
         Context appContext = InstrumentationRegistry.getInstrumentation().getTargetContext();
         assertEquals("com.example.arturitopsicologo", appContext.getPackageName());
     }
-
 
     @Test
     public void testLogin() {
@@ -56,6 +51,20 @@ public class ExampleInstrumentedTest {
         String user_id="5pjnY3QWwTeOOMEWXpueeJPgQHm1";
         String fecha ="04-10-2022";
         assertEquals("ok",usuarioTest.AgregarFecha(null,user_id));
+    }
+    @Test
+    public  void AgregarHora(){
+        String user_id="5pjnY3QWwTeOOMEWXpueeJPgQHm1";
+        String fecha ="04-10-2022";
+        assertEquals("ok",usuarioTest.AgregarHora(null,"-ND-q6ylq2gwDdQh4sNb","09:30 a.m.","10:30 a.m."));
+    }
+
+    @Test
+    public  void EditarHora(){
+        String user_id="5pjnY3QWwTeOOMEWXpueeJPgQHm1";
+        String hora_id ="-ND-ya5eRBRaWviqnsVq";
+        String fecha_id="-ND-q6ylq2gwDdQh4sNb";
+        assertEquals("ok",usuarioTest.EditarHora(user_id,hora_id,fecha_id,"09:30 a.m.","10:30 a.m."));
     }
 
 }

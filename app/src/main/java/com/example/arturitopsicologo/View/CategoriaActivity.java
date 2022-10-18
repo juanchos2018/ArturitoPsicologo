@@ -13,7 +13,7 @@ import com.example.arturitopsicologo.R;
 public class CategoriaActivity extends AppCompatActivity implements View.OnClickListener {
 
 
-    CardView cardlectura,carAtencion,cardmemoria,cardherramienta;
+    CardView cardlectura,carAtencion,cardmemoria,cardherramienta,carLenguaje;
     ImageView imgfinish;
 
     @Override
@@ -26,6 +26,7 @@ public class CategoriaActivity extends AppCompatActivity implements View.OnClick
         carAtencion=(CardView) findViewById(R.id.carAtencion);
         cardmemoria=(CardView) findViewById(R.id.cardmemoria);
         cardherramienta=(CardView) findViewById(R.id.cardherramienta);
+        carLenguaje=(CardView) findViewById(R.id.carLenguaje);
 
         imgfinish=(ImageView) findViewById(R.id.imgfinish);
 
@@ -33,6 +34,7 @@ public class CategoriaActivity extends AppCompatActivity implements View.OnClick
         carAtencion.setOnClickListener(this);
         cardmemoria.setOnClickListener(this);
         cardherramienta.setOnClickListener(this);
+        carLenguaje.setOnClickListener(this);
         imgfinish.setOnClickListener(this);
 
     }
@@ -54,6 +56,9 @@ public class CategoriaActivity extends AppCompatActivity implements View.OnClick
                 break;
             case R.id.cardherramienta:
                 startActivity(new Intent(this,HerramientasActivity.class));
+                break;
+            case R.id.carLenguaje:
+                startActivity(new Intent(this,LenguajeActivity.class));
                 break;
             case R.id.imgfinish:
                 finishs();

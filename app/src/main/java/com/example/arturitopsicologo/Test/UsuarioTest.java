@@ -8,6 +8,7 @@ import androidx.annotation.NonNull;
 import androidx.annotation.StyleableRes;
 
 import com.example.arturitopsicologo.Model.Fecha;
+import com.example.arturitopsicologo.Model.Horario;
 import com.example.arturitopsicologo.Model.Psicologo;
 import com.google.android.gms.tasks.OnCompleteListener;
 import com.google.android.gms.tasks.OnFailureListener;
@@ -119,4 +120,82 @@ public class UsuarioTest {
         }
         return  result;
     }
+
+    public  String AgregarHora(String psicologo_id,String fecha_id ,String hora_incio, String hora_fin){
+
+        String result="";
+        if (TextUtils.isEmpty(hora_incio)){
+            result="fail";
+        }
+        else if (TextUtils.isEmpty(hora_fin)){
+            result="fail";
+        }else{
+
+            int index=1;
+            DatabaseReference databaseReference;
+            databaseReference= FirebaseDatabase.getInstance().getReference();
+            String key =databaseReference.push().getKey();
+
+            Horario horario = new Horario();
+            horario.setId(key);
+            horario.setHora_inicio(hora_incio);
+            horario.setHora_fin(hora_fin);
+            horario.setIndex((int) index+1);
+
+            databaseReference.child("Fechas").child(psicologo_id).child(fecha_id).child("Horas").child(key).setValue(horario).addOnCompleteListener(new OnCompleteListener<Void>() {
+                @Override
+                public void onComplete(@NonNull @NotNull Task<Void> task) {
+                    if (task.isSuccessful()){
+
+                    }
+                }
+            }).addOnFailureListener(new OnFailureListener() {
+                @Override
+                public void onFailure(@NonNull @NotNull Exception e) {
+
+                }
+            });
+
+            result="ok";
+        }
+
+        return  result;
+    }
+    public  String EditarHora(String psicologo_id,String  id_hora,String fecha_id ,String hora_incio, String hora_fin){
+
+        String result="";
+        if (TextUtils.isEmpty(hora_incio)){
+            result="fail";
+        }
+        else if (TextUtils.isEmpty(hora_fin)){
+            result="fail";
+        }else {
+            DatabaseReference databaseReference;
+            databaseReference= FirebaseDatabase.getInstance().getReference();
+            Map<String,Object> obj= new HashMap<>();
+            obj.put("hora_inicio",hora_incio);
+            obj.put("hora_fin",hora_fin);
+
+            databaseReference.child("Fechas").child(psicologo_id).child(fecha_id).child("Horas").child(id_hora).updateChildren(obj).addOnCompleteListener(new OnCompleteListener<Void>() {
+                @Override
+                public void onComplete(@NonNull @NotNull Task<Void> task) {
+                    if (task.isSuccessful()){
+
+                    }
+                }
+            }).addOnFailureListener(new OnFailureListener() {
+                @Override
+                public void onFailure(@NonNull @NotNull Exception e) {
+                }
+            });
+            result="ok";
+
+        }
+
+        return  result;
+    }
+
+
+
+
 }

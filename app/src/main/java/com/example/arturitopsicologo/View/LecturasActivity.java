@@ -71,6 +71,8 @@ public class LecturasActivity extends AppCompatActivity implements View.OnClickL
         records();
     }
 
+
+
     private  void  records(){
         RecyclerView recyclerView=(RecyclerView)findViewById(R.id.recylerlecturas);
         recyclerView.setLayoutManager(new LinearLayoutManager(this, LinearLayoutManager.VERTICAL, false));

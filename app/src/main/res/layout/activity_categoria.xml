@@ -48,173 +48,236 @@
         </LinearLayout>
     </androidx.appcompat.widget.Toolbar>
 
-    <androidx.cardview.widget.CardView
-        android:id="@+id/cardlectura"
+
+
+
+    <ScrollView
         android:layout_width="match_parent"
-        android:layout_margin="20dp"
-        app:cardCornerRadius="20dp"
-        app:cardElevation="10dp"
-        android:layout_height="wrap_content">
+        android:layout_height="match_parent">
         <LinearLayout
-            android:orientation="horizontal"
-            android:padding="10dp"
             android:layout_width="match_parent"
-            android:layout_height="wrap_content">
-
-            <LinearLayout
-                android:layout_width="wrap_content"
-                android:layout_height="match_parent">
-                <com.github.siyamed.shapeimageview.CircularImageView
-                    android:layout_gravity="center"
-                    android:layout_width="90dp"
-                    android:layout_height="90dp"
-                    android:src="@drawable/lectura"
-                    app:siBorderWidth="2dp"
-                    app:siBorderColor="@color/teal_200"/>
-            </LinearLayout>
-            <LinearLayout
-                android:gravity="center"
-                android:padding="5dp"
-                android:orientation="vertical"
+            android:layout_height="match_parent"
+            android:orientation="vertical"
+            >
+            <androidx.cardview.widget.CardView
+                android:id="@+id/cardlectura"
                 android:layout_width="match_parent"
-                android:layout_height="match_parent">
-
-                <TextView
-                    android:text="LECTURA"
-                    android:textSize="20sp"
-                    android:textStyle="bold"
-                    android:layout_width="wrap_content"
+                android:layout_margin="20dp"
+                app:cardCornerRadius="20dp"
+                app:cardElevation="10dp"
+                android:layout_height="wrap_content">
+                <LinearLayout
+                    android:orientation="horizontal"
+                    android:padding="10dp"
+                    android:layout_width="match_parent"
                     android:layout_height="wrap_content">
-                </TextView>
-            </LinearLayout>
-        </LinearLayout>
-    </androidx.cardview.widget.CardView>
 
-    <androidx.cardview.widget.CardView
-        android:id="@+id/carAtencion"
-        android:layout_width="match_parent"
-        android:layout_margin="20dp"
-        app:cardCornerRadius="20dp"
-        app:cardElevation="10dp"
-        android:layout_height="wrap_content">
-        <LinearLayout
-            android:orientation="horizontal"
-            android:padding="10dp"
-            android:layout_width="match_parent"
-            android:layout_height="wrap_content">
+                    <LinearLayout
+                        android:layout_width="wrap_content"
+                        android:layout_height="match_parent">
+                        <com.github.siyamed.shapeimageview.CircularImageView
+                            android:layout_gravity="center"
+                            android:layout_width="90dp"
+                            android:layout_height="90dp"
+                            android:src="@drawable/lectura"
+                            app:siBorderWidth="2dp"
+                            app:siBorderColor="@color/teal_200"/>
+                    </LinearLayout>
+                    <LinearLayout
+                        android:gravity="center"
+                        android:padding="5dp"
+                        android:orientation="vertical"
+                        android:layout_width="match_parent"
+                        android:layout_height="match_parent">
 
-            <LinearLayout
-                android:layout_width="wrap_content"
-                android:layout_height="match_parent">
-                <com.github.siyamed.shapeimageview.CircularImageView
-                    android:layout_gravity="center"
-                    android:layout_width="90dp"
-                    android:layout_height="90dp"
-                    android:src="@drawable/atencion"
-                    app:siBorderWidth="2dp"
-                    app:siBorderColor="@color/teal_200"/>
-            </LinearLayout>
-            <LinearLayout
-                android:gravity="center"
-                android:padding="5dp"
-                android:orientation="vertical"
+                        <TextView
+                            android:text="LECTURA"
+                            android:textSize="20sp"
+                            android:textStyle="bold"
+                            android:layout_width="wrap_content"
+                            android:layout_height="wrap_content">
+                        </TextView>
+                    </LinearLayout>
+                </LinearLayout>
+            </androidx.cardview.widget.CardView>
+
+            <androidx.cardview.widget.CardView
+                android:id="@+id/carAtencion"
                 android:layout_width="match_parent"
-                android:layout_height="match_parent">
-
-                <TextView
-                    android:text="ATENCION"
-                    android:textSize="20sp"
-                    android:textStyle="bold"
-                    android:layout_width="wrap_content"
+                android:layout_margin="20dp"
+                app:cardCornerRadius="20dp"
+                app:cardElevation="10dp"
+                android:layout_height="wrap_content">
+                <LinearLayout
+                    android:orientation="horizontal"
+                    android:padding="10dp"
+                    android:layout_width="match_parent"
                     android:layout_height="wrap_content">
-                </TextView>
-            </LinearLayout>
-        </LinearLayout>
-    </androidx.cardview.widget.CardView>
 
-    <androidx.cardview.widget.CardView
-        android:id="@+id/cardmemoria"
-        android:layout_width="match_parent"
-        android:layout_margin="20dp"
-        app:cardCornerRadius="20dp"
-        app:cardElevation="10dp"
-        android:layout_height="wrap_content">
-        <LinearLayout
-            android:orientation="horizontal"
-            android:padding="10dp"
-            android:layout_width="match_parent"
-            android:layout_height="wrap_content">
+                    <LinearLayout
+                        android:layout_width="wrap_content"
+                        android:layout_height="match_parent">
+                        <com.github.siyamed.shapeimageview.CircularImageView
+                            android:layout_gravity="center"
+                            android:layout_width="90dp"
+                            android:layout_height="90dp"
+                            android:src="@drawable/atencion"
+                            app:siBorderWidth="2dp"
+                            app:siBorderColor="@color/teal_200"/>
+                    </LinearLayout>
+                    <LinearLayout
+                        android:gravity="center"
+                        android:padding="5dp"
+                        android:orientation="vertical"
+                        android:layout_width="match_parent"
+                        android:layout_height="match_parent">
 
-            <LinearLayout
-                android:layout_width="wrap_content"
-                android:layout_height="match_parent">
-                <com.github.siyamed.shapeimageview.CircularImageView
-                    android:layout_gravity="center"
-                    android:layout_width="90dp"
-                    android:layout_height="90dp"
-                    android:src="@drawable/memoria"
-                    app:siBorderWidth="2dp"
-                    app:siBorderColor="@color/teal_200"/>
-            </LinearLayout>
-            <LinearLayout
-                android:gravity="center"
-                android:padding="5dp"
-                android:orientation="vertical"
+                        <TextView
+                            android:text="ATENCION"
+                            android:textSize="20sp"
+                            android:textStyle="bold"
+                            android:layout_width="wrap_content"
+                            android:layout_height="wrap_content">
+                        </TextView>
+                    </LinearLayout>
+                </LinearLayout>
+            </androidx.cardview.widget.CardView>
+
+            <androidx.cardview.widget.CardView
+                android:id="@+id/cardmemoria"
                 android:layout_width="match_parent"
-                android:layout_height="match_parent">
-
-                <TextView
-                    android:text="MEMORIA"
-                    android:textSize="20sp"
-                    android:textStyle="bold"
-                    android:layout_width="wrap_content"
+                android:layout_margin="20dp"
+                app:cardCornerRadius="20dp"
+                app:cardElevation="10dp"
+                android:layout_height="wrap_content">
+                <LinearLayout
+                    android:orientation="horizontal"
+                    android:padding="10dp"
+                    android:layout_width="match_parent"
                     android:layout_height="wrap_content">
-                </TextView>
-            </LinearLayout>
-        </LinearLayout>
-    </androidx.cardview.widget.CardView>
 
-    <androidx.cardview.widget.CardView
-        android:id="@+id/cardherramienta"
-        android:layout_width="match_parent"
-        android:layout_margin="20dp"
-        app:cardCornerRadius="20dp"
-        app:cardElevation="10dp"
-        android:layout_height="wrap_content">
-        <LinearLayout
-            android:orientation="horizontal"
-            android:padding="10dp"
-            android:layout_width="match_parent"
-            android:layout_height="wrap_content">
+                    <LinearLayout
+                        android:layout_width="wrap_content"
+                        android:layout_height="match_parent">
+                        <com.github.siyamed.shapeimageview.CircularImageView
+                            android:layout_gravity="center"
+                            android:layout_width="90dp"
+                            android:layout_height="90dp"
+                            android:src="@drawable/memoria"
+                            app:siBorderWidth="2dp"
+                            app:siBorderColor="@color/teal_200"/>
+                    </LinearLayout>
+                    <LinearLayout
+                        android:gravity="center"
+                        android:padding="5dp"
+                        android:orientation="vertical"
+                        android:layout_width="match_parent"
+                        android:layout_height="match_parent">
 
-            <LinearLayout
-                android:layout_width="wrap_content"
-                android:layout_height="match_parent">
-                <com.github.siyamed.shapeimageview.CircularImageView
-                    android:layout_gravity="center"
-                    android:layout_width="90dp"
-                    android:layout_height="90dp"
-                    android:src="@drawable/memoria"
-                    app:siBorderWidth="2dp"
-                    app:siBorderColor="@color/teal_200"/>
-            </LinearLayout>
-            <LinearLayout
-                android:gravity="center"
-                android:padding="5dp"
-                android:orientation="vertical"
+                        <TextView
+                            android:text="MEMORIA"
+                            android:textSize="20sp"
+                            android:textStyle="bold"
+                            android:layout_width="wrap_content"
+                            android:layout_height="wrap_content">
+                        </TextView>
+                    </LinearLayout>
+                </LinearLayout>
+            </androidx.cardview.widget.CardView>
+
+            <androidx.cardview.widget.CardView
+                android:id="@+id/cardherramienta"
                 android:layout_width="match_parent"
-                android:layout_height="match_parent">
-
-                <TextView
-                    android:text="HERRAMIENTA ESPACIAL"
-                    android:textSize="20sp"
-                    android:textStyle="bold"
-                    android:layout_width="wrap_content"
+                android:layout_margin="20dp"
+                app:cardCornerRadius="20dp"
+                app:cardElevation="10dp"
+                android:layout_height="wrap_content">
+                <LinearLayout
+                    android:orientation="horizontal"
+                    android:padding="10dp"
+                    android:layout_width="match_parent"
                     android:layout_height="wrap_content">
-                </TextView>
-            </LinearLayout>
+
+                    <LinearLayout
+                        android:layout_width="wrap_content"
+                        android:layout_height="match_parent">
+                        <com.github.siyamed.shapeimageview.CircularImageView
+                            android:layout_gravity="center"
+                            android:layout_width="90dp"
+                            android:layout_height="90dp"
+                            android:src="@drawable/memoria"
+                            app:siBorderWidth="2dp"
+                            app:siBorderColor="@color/teal_200"/>
+                    </LinearLayout>
+                    <LinearLayout
+                        android:gravity="center"
+                        android:padding="5dp"
+                        android:orientation="vertical"
+                        android:layout_width="match_parent"
+                        android:layout_height="match_parent">
+
+                        <TextView
+                            android:text="HERRAMIENTA ESPACIAL"
+                            android:textSize="20sp"
+                            android:textStyle="bold"
+                            android:layout_width="wrap_content"
+                            android:layout_height="wrap_content">
+                        </TextView>
+                    </LinearLayout>
+                </LinearLayout>
+            </androidx.cardview.widget.CardView>
+
+
+
+
+
+            <androidx.cardview.widget.CardView
+                android:id="@+id/carLenguaje"
+                android:layout_width="match_parent"
+                android:layout_margin="20dp"
+                app:cardCornerRadius="20dp"
+                app:cardElevation="10dp"
+                android:layout_height="wrap_content">
+                <LinearLayout
+                    android:orientation="horizontal"
+                    android:padding="10dp"
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content">
+
+                    <LinearLayout
+                        android:layout_width="wrap_content"
+                        android:layout_height="match_parent">
+                        <com.github.siyamed.shapeimageview.CircularImageView
+                            android:layout_gravity="center"
+                            android:layout_width="90dp"
+                            android:layout_height="90dp"
+                            android:src="@drawable/atencion"
+                            app:siBorderWidth="2dp"
+                            app:siBorderColor="@color/teal_200"/>
+                    </LinearLayout>
+                    <LinearLayout
+                        android:gravity="center"
+                        android:padding="5dp"
+                        android:orientation="vertical"
+                        android:layout_width="match_parent"
+                        android:layout_height="match_parent">
+
+                        <TextView
+                            android:text="LENGUAJE ARTICULADO"
+                            android:textSize="18sp"
+                            android:textStyle="bold"
+                            android:layout_width="wrap_content"
+                            android:layout_height="wrap_content">
+                        </TextView>
+                    </LinearLayout>
+                </LinearLayout>
+            </androidx.cardview.widget.CardView>
+
+
         </LinearLayout>
-    </androidx.cardview.widget.CardView>
+    </ScrollView>
+
+
 
 
 </LinearLayout>

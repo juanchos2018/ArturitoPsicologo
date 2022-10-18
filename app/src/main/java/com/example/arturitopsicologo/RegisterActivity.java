@@ -20,7 +20,7 @@ public class RegisterActivity extends AppCompatActivity implements View.OnClickL
 
 
     EditText tvnombre,tvapellido,tvcorreo,tvclave;
-    Button btnregistrarusu;
+    Button btnregistrarusu,btncancelar;
     PresenterRegister presenterLogin;
     private DatabaseReference reference;
 
@@ -44,7 +44,9 @@ public class RegisterActivity extends AppCompatActivity implements View.OnClickL
         tvcorreo=(EditText)findViewById(R.id.tvcorreo);
         tvclave=(EditText)findViewById(R.id.tvclave);
         btnregistrarusu=(Button) findViewById(R.id.btnregistrarusu);
+        btncancelar=(Button) findViewById(R.id.btncancelar);
         btnregistrarusu.setOnClickListener(this);
+        btncancelar.setOnClickListener(this);
 
     }
 
@@ -59,6 +61,9 @@ public class RegisterActivity extends AppCompatActivity implements View.OnClickL
                 String clave=tvclave.getText().toString();
 
                 store(nombre,apellido,correo,clave);
+                break;
+            case  R.id.btncancelar:
+                finish();
                 break;
         }
     }

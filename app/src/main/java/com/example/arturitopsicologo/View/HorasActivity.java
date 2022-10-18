@@ -50,7 +50,7 @@ public class HorasActivity extends AppCompatActivity  implements View.OnClickLis
     String turno="";
 
     ImageView imgfinish;
-
+     int horaInicio=0;
     @Override
     protected void onCreate(Bundle savedInstanceState) {
         super.onCreate(savedInstanceState);
@@ -110,6 +110,8 @@ public class HorasActivity extends AppCompatActivity  implements View.OnClickLis
         btnhora1=(Button)v.findViewById(R.id.btnhora1);
         btnhora2=(Button)v.findViewById(R.id.btnhora2);
 
+
+        btguardar.setEnabled(false);
         builder.setView(v);
 
         btnhora1.setOnClickListener(new View.OnClickListener() {
@@ -126,6 +128,7 @@ public class HorasActivity extends AppCompatActivity  implements View.OnClickLis
                         } else {
                             AM_PM = "p.m.";
                         }
+                        horaInicio=hourOfDay;
                         btnhora1.setText(horaFormateada + DOS_PUNTOS + minutoFormateado + " " + AM_PM);
                         // ethora.setText(horaFormateada + DOS_PUNTOS + minutoFormateado + " " + AM_PM);
                     }
@@ -142,14 +145,19 @@ public class HorasActivity extends AppCompatActivity  implements View.OnClickLis
                         String horaFormateada =  (hourOfDay < 10)? String.valueOf(CERO + hourOfDay) : String.valueOf(hourOfDay);
                         String minutoFormateado = (minute < 10)? String.valueOf(CERO + minute):String.valueOf(minute);
                         String AM_PM;
-                        if(hourOfDay < 12) {
-                            AM_PM = "a.m.";
-                            turno="mañana";
-                        } else {
-                            AM_PM = "p.m.";
-                            turno="tarde";
+                        if (hourOfDay<=horaInicio) {
+                            Toast.makeText(HorasActivity.this, "No puedes elegir iguala la hora inicio", Toast.LENGTH_SHORT).show();
+                        }else{
+                            btguardar.setEnabled(true);
+                            if(hourOfDay < 12) {
+                                AM_PM = "a.m.";
+                                turno="mañana";
+                            } else {
+                                AM_PM = "p.m.";
+                                turno="tarde";
+                            }
+                            btnhora2.setText(horaFormateada + DOS_PUNTOS + minutoFormateado + " " + AM_PM);
                         }
-                        btnhora2.setText(horaFormateada + DOS_PUNTOS + minutoFormateado + " " + AM_PM);
                     }
                 }, hora, minuto, false);
                 recogerHora.show();

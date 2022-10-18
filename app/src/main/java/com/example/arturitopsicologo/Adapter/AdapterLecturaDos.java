@@ -56,9 +56,9 @@ public class AdapterLecturaDos extends RecyclerView.Adapter<AdapterLecturaDos.Vi
             datgolder.id=listaItems.get(position).getId();
 
             if (listaItems.get(position).getEstado().equals("resuelto")){
-            datgolder.imgestado.setImageResource(R.drawable.ic_check);
+             datgolder.imgestado.setImageResource(R.drawable.ic_check);
             }else{
-            datgolder.imgestado.setImageResource(R.drawable.ic_empty);
+             datgolder.imgestado.setImageResource(R.drawable.ic_empty);
             }
 
           }

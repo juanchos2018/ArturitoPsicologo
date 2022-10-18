@@ -83,10 +83,13 @@ public class PresenterTaller {
                 adapter.setOnClickListener(new View.OnClickListener() {
                     @Override
                     public void onClick(View view) {
-                        String id =lista.get(recyclerView.getChildAdapterPosition(view)).getId();
-                        ViewLectura(CategoriaId, id);
-
-
+                        String estado =lista.get(recyclerView.getChildAdapterPosition(view)).getEstado();
+                        if (estado.equals("resuelto")) {
+                            String id =lista.get(recyclerView.getChildAdapterPosition(view)).getId();
+                            ViewLectura(CategoriaId, id);
+                        }else{
+                            Toast.makeText(mContext, "No ha sido resuelto aun", Toast.LENGTH_SHORT).show();
+                        }
                     }
                 });
             }
@@ -140,8 +143,13 @@ public class PresenterTaller {
                 adapter3.setOnClickListener(new View.OnClickListener() {
                     @Override
                     public void onClick(View view) {
-                        String id=lista.get(recyclerView.getChildAdapterPosition(view)).getId();
-                        ViewMemoria(CategoriaId,id);
+                        String estado =lista.get(recyclerView.getChildAdapterPosition(view)).getEstado();
+                        if (estado.equals("resuelto")) {
+                            String id=lista.get(recyclerView.getChildAdapterPosition(view)).getId();
+                            ViewMemoria(CategoriaId,id);
+                        }else{
+                            Toast.makeText(mContext, "No ha sido resuelto aun", Toast.LENGTH_SHORT).show();
+                        }
                     }
                 });
             }
